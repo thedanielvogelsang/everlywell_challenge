@@ -48,4 +48,26 @@ RSpec.describe FriendMatcherService, type: :service do
       end
     end
   end
+
+  describe 'functionality' do
+    let(:user1) { user }
+    let(:user2) { medical_expert_non_friend }
+    let(:call) { subject.find_friend_path }
+
+    context 'with path between users' do
+      it 'uses breadth search to find path between nodes' do
+        expect(call).to eq([medical_expert_non_friend.id, friend_of_user.id, user.id])
+      end
+    end
+
+    context 'without path between users' do
+      before do
+        Friendship.where("user_id = ? OR friend_id = ?", user.id, friend_of_user.id).destroy_all
+      end
+      it 'returns false' do
+        expect(user.friends.empty?).to eq(true)
+        expect(call).to eq(false)
+      end
+    end
+  end
 end
