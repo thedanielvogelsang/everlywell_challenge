@@ -16,13 +16,11 @@ API for creating users, searches, and friendships
 * search bar which can find non-friends with fuzzy-matched 'expertise'
 3. Users can search for expertise outside their network
 
-Things you may want to cover:
+Ruby version
+* ruby '2.6.3'
+* rails '~> 6.0.3', '>= 6.0.3.2'
 
-* Ruby version
-ruby '2.6.3'
-rails '~> 6.0.3', '>= 6.0.3.2'
-
-* System dependencies
+System dependencies
 
 [brew](https://brew.sh/)
 
