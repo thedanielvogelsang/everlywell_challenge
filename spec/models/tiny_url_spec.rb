@@ -10,12 +10,23 @@ RSpec.describe TinyUrl, type: :model do
   describe 'creation' do
     let(:new_shortened_url) { TinyUrl.new(original_url: my_url) }
 
-    describe 'random string' do
-      let(:my_url) { 'adsfasdf;ads' }
+    context 'invalid url' do
+      describe 'random string' do
+        let(:my_url) { 'adsfasdf;ads' }
+
+        it 'should return an error' do
+          new_shortened_url.save
+          expect(new_shortened_url.errors.messages[:original_url]).to eq(["Invalid url"])
+        end
+      end
+    end
+
+    context 'valid url' do
+      let(:my_url) { 'www.myexamplesite.mydomain.com' }
 
       it 'should return an error' do
         new_shortened_url.save
-        expect(new_shortened_url.errors.messages[:original_url]).to eq(["Invalid url"])
+        expect(new_shortened_url.errors.messages.empty?).to eq(true)
       end
     end
   end

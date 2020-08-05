@@ -9,6 +9,7 @@ class TinyUrl < ApplicationRecord
   before_create :generate_shortened_url
 
   def generate_shortened_url
+    url = self.original_url
     self.shortened_url = url
   end
 
