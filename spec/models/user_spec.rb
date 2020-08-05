@@ -56,4 +56,14 @@ RSpec.describe User, type: :model do
       end
     end
   end
+
+  describe 'utility' do
+    before(:each) do
+      user1.add_friend(user2)
+    end
+
+    it 'can check for friendship using #is_friend?' do
+      expect(user1.is_friend?(user2)).to eq(true)
+    end
+  end
 end

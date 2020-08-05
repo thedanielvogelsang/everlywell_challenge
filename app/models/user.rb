@@ -20,4 +20,12 @@ class User < ApplicationRecord
     @sanitized_url = tiny_url.sanitized_url
     self.tiny_url = tiny_url.shortened_url
   end
+
+  def is_friend?(friend)
+    if friend.class == User
+      Friendship.exists?(user_id: id, friend_id: friend.id)
+    elsif friend.class == Integer
+      Friendship.exists?(user_id: id, friend_id: friend)
+    end
+  end
 end
