@@ -13,10 +13,13 @@ RSpec.describe UserExpertiseService, type: :service do
 
   describe 'expertise creation' do
     let(:call) { subject.call }
+
     it 'assigns Expertise to user' do
-      expect(Expertise.count).to eq(0)
-      call
-      expect(Expertise.count).to_not eq(0)
+      VCR.use_cassette('user_expertise_service/call', record: :new_episodes) do
+        expect(Expertise.count).to eq(0)
+        call
+        expect(Expertise.count).to_not eq(0)
+      end
     end
   end
 end

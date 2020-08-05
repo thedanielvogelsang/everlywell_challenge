@@ -61,4 +61,14 @@ class ExpertiseService
       expertise << elems.map{ |el| el.text }
     end
   end
+
+  def generate_expertise_from_titles
+    find_all_title_elements
+
+    @expertise = expertise.flatten
+
+    expertise.each do |exp|
+      Expertise.find_or_create_by(website_text: exp, user_id: user.id)
+    end
+  end
 end
