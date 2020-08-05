@@ -4,6 +4,7 @@ RSpec.describe TinyUrl, type: :model do
   describe 'constants and validations' do
     it { expect(subject).to validate_presence_of(:original_url) }
     it { expect(subject).to_not validate_presence_of(:shortened_url) }
+    it { expect(subject).to_not validate_presence_of(:sanitized_url) }
     it { expect(TinyUrl::TINY_URL_LENGTH).to eq(7) }
   end
 
@@ -74,6 +75,15 @@ RSpec.describe TinyUrl, type: :model do
       let(:my_url) { prince_gently_weeps }
       let(:not_my_url) { prince_gently_weeps + 'ABCDEF'}
       let(:prince_gently_weeps) { 'https://www.youtube.com/watch?v=6SFNW5F8K9Y' }
+
+
+      context 'validations' do
+        it 'cant be duplicated' do
+          expect(new_url_record.original_url).to_not eq(other_shortened_url.original_url)
+          expect(other_shortened_url.save).to eq(true)
+          expect(new_url_record.shortened_url).to_not eq(other_shortened_url.shortened_url)
+        end
+      end
 
       context 'upon creation' do
         let(:shortened_url_length) { 'http://'.length + TinyUrl::TINY_URL_LENGTH }
