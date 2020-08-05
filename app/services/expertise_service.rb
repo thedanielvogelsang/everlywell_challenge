@@ -33,4 +33,25 @@ class ExpertiseService
   def current_url?
     browser.current_url
   end
+
+  def find_h1_elements
+    elems = browser.find_elements(:tag_name, 'h1')
+    unless elems.empty?
+      expertise << elems.map{ |el| el.text }
+    end
+  end
+
+  def find_h2_elements
+    elems = browser.find_elements(:tag_name, 'h2')
+    unless elems.empty?
+      expertise << elems.map{ |el| el.text }
+    end
+  end
+
+  def find_h3_elements
+    elems = browser.find_elements(:tag_name, 'h3')
+    unless elems.empty?
+      expertise << elems.map{ |el| el.text }
+    end
+  end
 end
