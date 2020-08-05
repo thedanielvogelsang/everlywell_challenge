@@ -8,9 +8,24 @@ class TinyUrl < ApplicationRecord
 
   before_create :generate_shortened_url
 
-  def generate_shortened_url
-    url = self.original_url
-    self.shortened_url = url
+  scope :with_shortened_url, -> (url) { where(shortened_url: url) }
+
+  def create_tiny_url
+    url = 'http://' +half_url_sample + '.' + half_url_sample
   end
 
+  private
+  def half_url_sample
+    ([*('a'..'z'),*('0'..'9')]).sample(TINY_URL_LENGTH/2).join
+  end
+
+  def generate_shortened_url
+    url = create_tiny_url
+    url_already_present = TinyUrl.with_shortened_url(url).first
+    if url_already_present
+      generate_shortened_url
+    else
+      self.shortened_url = url
+    end
+  end
 end

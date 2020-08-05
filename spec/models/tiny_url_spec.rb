@@ -19,6 +19,24 @@ RSpec.describe TinyUrl, type: :model do
           expect(new_shortened_url.errors.messages[:original_url]).to eq(["Invalid url"])
         end
       end
+
+      describe 'email' do
+        let(:my_url) { 'www.myexamplesite@mydomain.com' }
+
+        it 'should return an error' do
+          new_shortened_url.save
+          expect(new_shortened_url.errors.messages[:original_url]).to eq(["Invalid url"])
+        end
+      end
+
+      describe 'capital letters' do
+        let(:my_url) { 'www.myexamplesite@mydomain.com'.upcase }
+
+        it 'should return an error' do
+          new_shortened_url.save
+          expect(new_shortened_url.errors.messages[:original_url]).to eq(["Invalid url"])
+        end
+      end
     end
 
     context 'valid url' do
