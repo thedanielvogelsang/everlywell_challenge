@@ -7,6 +7,7 @@ class TinyUrl < ApplicationRecord
   }
 
   before_create :generate_shortened_url
+  before_create :sanitize_url
 
   scope :with_shortened_url, -> (url) { where(shortened_url: url) }
 
@@ -27,5 +28,10 @@ class TinyUrl < ApplicationRecord
     else
       self.shortened_url = url
     end
+  end
+
+  def sanitize_url
+    sanitized_url = self.original_url.gsub(/(https?:\/\/)|(www\.)/, '')
+    self.sanitized_url = "http://#{sanitized_url}"
   end
 end

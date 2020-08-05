@@ -60,6 +60,10 @@ RSpec.describe TinyUrl, type: :model do
         it 'creates a shortened_url from the original_url' do
           expect(new_url_record.shortened_url.blank?).to eq(false)
         end
+
+        it 'creates a sanitized_url from the original_url' do
+          expect(new_url_record.sanitized_url.blank?).to eq(false)
+        end
       end
     end
   end
