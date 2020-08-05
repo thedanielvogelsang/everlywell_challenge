@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: http://127.0.0.1:9554/session
+    uri: http://127.0.0.1:9558/session
     body:
       encoding: UTF-8
       string: '{"desiredCapabilities":{"browserName":"chrome","version":"","platform":"ANY","javascriptEnabled":true,"cssSelectorsEnabled":true,"takesScreenshot":false,"nativeEvents":false,"rotatable":false,"goog:chromeOptions":{"args":["--no-sandbox","--headless","--ignore-certificate-errors","--disable-notifications","--window-size=1200,600","--disable-dev-shm-usage"]}},"capabilities":{"firstMatch":[{"browserName":"chrome","goog:chromeOptions":{"args":["--no-sandbox","--headless","--ignore-certificate-errors","--disable-notifications","--window-size=1200,600","--disable-dev-shm-usage"]}}]}}'
@@ -31,14 +31,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"84.0.4147.105","chrome":{"chromedriverVersion":"84.0.4147.30
-        (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310})","userDataDir":"/var/folders/rk/sgp65zqx56z_drt41n9r2gvh0000gn/T/.com.google.Chrome.iN7Vry"},"goog:chromeOptions":{"debuggerAddress":"localhost:59157"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac
+        (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310})","userDataDir":"/var/folders/rk/sgp65zqx56z_drt41n9r2gvh0000gn/T/.com.google.Chrome.hm3WqI"},"goog:chromeOptions":{"debuggerAddress":"localhost:60544"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac
         os x","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss
-        and notify","webauthn:virtualAuthenticators":true},"sessionId":"e46827fe4235ad3d3703a8f04a42133b"}}'
+        and notify","webauthn:virtualAuthenticators":true},"sessionId":"dd7f14f9956cb7ed4997fd8d1e95d247"}}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 13:23:40 GMT
+  recorded_at: Wed, 05 Aug 2020 13:47:29 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9554/session/e46827fe4235ad3d3703a8f04a42133b/url
+    uri: http://127.0.0.1:9558/session/dd7f14f9956cb7ed4997fd8d1e95d247/url
     body:
       encoding: UTF-8
       string: '{"url":"http://coloradosolidarity.com/"}'
@@ -68,10 +68,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":null}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 13:23:44 GMT
+  recorded_at: Wed, 05 Aug 2020 13:47:35 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9554/session/e46827fe4235ad3d3703a8f04a42133b/elements
+    uri: http://127.0.0.1:9558/session/dd7f14f9956cb7ed4997fd8d1e95d247/elements
     body:
       encoding: UTF-8
       string: '{"using":"css selector","value":"h1"}'
@@ -101,10 +101,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":[]}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 13:23:44 GMT
+  recorded_at: Wed, 05 Aug 2020 13:47:35 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9554/session/e46827fe4235ad3d3703a8f04a42133b/elements
+    uri: http://127.0.0.1:9558/session/dd7f14f9956cb7ed4997fd8d1e95d247/elements
     body:
       encoding: UTF-8
       string: '{"using":"css selector","value":"h2"}'
@@ -132,12 +132,12 @@ http_interactions:
       - no-cache
     body:
       encoding: UTF-8
-      string: '{"value":[{"element-6066-11e4-a52e-4f735466cecf":"71de6653-6702-48ba-b854-d4f7b1150ccb"},{"element-6066-11e4-a52e-4f735466cecf":"f4b17149-6a11-4541-bd1e-84740f77c3de"},{"element-6066-11e4-a52e-4f735466cecf":"eefe9a73-3e02-4b0a-9843-db0df26d8648"},{"element-6066-11e4-a52e-4f735466cecf":"e7ef6ba8-5a00-4d24-973d-7b3e2023dc2a"},{"element-6066-11e4-a52e-4f735466cecf":"44a48bbe-c939-44d2-85b1-75446e44e8a8"},{"element-6066-11e4-a52e-4f735466cecf":"e24ed2a4-fcea-4e00-af66-4e7191a5ff53"},{"element-6066-11e4-a52e-4f735466cecf":"fbcc63d3-04a4-4a4d-92d4-ae6b84e4106b"}]}'
+      string: '{"value":[{"element-6066-11e4-a52e-4f735466cecf":"b06df7a3-9ea5-433a-b412-8017e4e1586e"},{"element-6066-11e4-a52e-4f735466cecf":"139a73c6-2d3d-47d2-946e-eba835184150"},{"element-6066-11e4-a52e-4f735466cecf":"28a0ddc7-2a5f-4781-b481-f2f23d0841b3"},{"element-6066-11e4-a52e-4f735466cecf":"a94447e0-62c6-4e58-a39e-7c553e646595"},{"element-6066-11e4-a52e-4f735466cecf":"b7ff4e34-531d-48a1-9607-1fa415c0716a"},{"element-6066-11e4-a52e-4f735466cecf":"f249228f-3775-4484-a14b-0eb1d5cbdc3b"},{"element-6066-11e4-a52e-4f735466cecf":"f8c3f6b3-e886-48c3-a730-36b21d75cd35"}]}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 13:23:44 GMT
+  recorded_at: Wed, 05 Aug 2020 13:47:35 GMT
 - request:
     method: get
-    uri: http://127.0.0.1:9554/session/e46827fe4235ad3d3703a8f04a42133b/element/71de6653-6702-48ba-b854-d4f7b1150ccb/text
+    uri: http://127.0.0.1:9558/session/dd7f14f9956cb7ed4997fd8d1e95d247/element/b06df7a3-9ea5-433a-b412-8017e4e1586e/text
     body:
       encoding: US-ASCII
       string: ''
@@ -167,10 +167,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":"An inclusive economy starts with us."}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 13:23:44 GMT
+  recorded_at: Wed, 05 Aug 2020 13:47:35 GMT
 - request:
     method: get
-    uri: http://127.0.0.1:9554/session/e46827fe4235ad3d3703a8f04a42133b/element/f4b17149-6a11-4541-bd1e-84740f77c3de/text
+    uri: http://127.0.0.1:9558/session/dd7f14f9956cb7ed4997fd8d1e95d247/element/139a73c6-2d3d-47d2-946e-eba835184150/text
     body:
       encoding: US-ASCII
       string: ''
@@ -200,10 +200,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":"Coops"}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 13:23:44 GMT
+  recorded_at: Wed, 05 Aug 2020 13:47:35 GMT
 - request:
     method: get
-    uri: http://127.0.0.1:9554/session/e46827fe4235ad3d3703a8f04a42133b/element/eefe9a73-3e02-4b0a-9843-db0df26d8648/text
+    uri: http://127.0.0.1:9558/session/dd7f14f9956cb7ed4997fd8d1e95d247/element/28a0ddc7-2a5f-4781-b481-f2f23d0841b3/text
     body:
       encoding: US-ASCII
       string: ''
@@ -233,10 +233,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":"SoLIDARITY"}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 13:23:44 GMT
+  recorded_at: Wed, 05 Aug 2020 13:47:35 GMT
 - request:
     method: get
-    uri: http://127.0.0.1:9554/session/e46827fe4235ad3d3703a8f04a42133b/element/e7ef6ba8-5a00-4d24-973d-7b3e2023dc2a/text
+    uri: http://127.0.0.1:9558/session/dd7f14f9956cb7ed4997fd8d1e95d247/element/a94447e0-62c6-4e58-a39e-7c553e646595/text
     body:
       encoding: US-ASCII
       string: ''
@@ -266,10 +266,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":"Economy"}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 13:23:44 GMT
+  recorded_at: Wed, 05 Aug 2020 13:47:35 GMT
 - request:
     method: get
-    uri: http://127.0.0.1:9554/session/e46827fe4235ad3d3703a8f04a42133b/element/44a48bbe-c939-44d2-85b1-75446e44e8a8/text
+    uri: http://127.0.0.1:9558/session/dd7f14f9956cb7ed4997fd8d1e95d247/element/b7ff4e34-531d-48a1-9607-1fa415c0716a/text
     body:
       encoding: US-ASCII
       string: ''
@@ -299,10 +299,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":"The CSF"}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 13:23:44 GMT
+  recorded_at: Wed, 05 Aug 2020 13:47:35 GMT
 - request:
     method: get
-    uri: http://127.0.0.1:9554/session/e46827fe4235ad3d3703a8f04a42133b/element/e24ed2a4-fcea-4e00-af66-4e7191a5ff53/text
+    uri: http://127.0.0.1:9558/session/dd7f14f9956cb7ed4997fd8d1e95d247/element/f249228f-3775-4484-a14b-0eb1d5cbdc3b/text
     body:
       encoding: US-ASCII
       string: ''
@@ -332,10 +332,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":"Difference"}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 13:23:44 GMT
+  recorded_at: Wed, 05 Aug 2020 13:47:35 GMT
 - request:
     method: get
-    uri: http://127.0.0.1:9554/session/e46827fe4235ad3d3703a8f04a42133b/element/fbcc63d3-04a4-4a4d-92d4-ae6b84e4106b/text
+    uri: http://127.0.0.1:9558/session/dd7f14f9956cb7ed4997fd8d1e95d247/element/f8c3f6b3-e886-48c3-a730-36b21d75cd35/text
     body:
       encoding: US-ASCII
       string: ''
@@ -365,10 +365,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":"Join the CSF Community"}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 13:23:44 GMT
+  recorded_at: Wed, 05 Aug 2020 13:47:35 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9554/session/e46827fe4235ad3d3703a8f04a42133b/elements
+    uri: http://127.0.0.1:9558/session/dd7f14f9956cb7ed4997fd8d1e95d247/elements
     body:
       encoding: UTF-8
       string: '{"using":"css selector","value":"h3"}'
@@ -396,12 +396,12 @@ http_interactions:
       - no-cache
     body:
       encoding: UTF-8
-      string: '{"value":[{"element-6066-11e4-a52e-4f735466cecf":"ae46b7eb-c743-4d62-a24f-fb76eca50eaa"},{"element-6066-11e4-a52e-4f735466cecf":"5dd1548c-a089-447e-891e-a0f1c2067a01"},{"element-6066-11e4-a52e-4f735466cecf":"267d48d4-4d79-46f4-8183-b12b9c09d287"}]}'
+      string: '{"value":[{"element-6066-11e4-a52e-4f735466cecf":"8077c9fb-ce7b-4869-a62e-6428d0c1432d"},{"element-6066-11e4-a52e-4f735466cecf":"040417fd-7f8b-4702-be14-8a401e7576e6"},{"element-6066-11e4-a52e-4f735466cecf":"d1d667d2-5dac-4208-a070-78a0c8af90d1"}]}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 13:23:44 GMT
+  recorded_at: Wed, 05 Aug 2020 13:47:35 GMT
 - request:
     method: get
-    uri: http://127.0.0.1:9554/session/e46827fe4235ad3d3703a8f04a42133b/element/ae46b7eb-c743-4d62-a24f-fb76eca50eaa/text
+    uri: http://127.0.0.1:9558/session/dd7f14f9956cb7ed4997fd8d1e95d247/element/8077c9fb-ce7b-4869-a62e-6428d0c1432d/text
     body:
       encoding: US-ASCII
       string: ''
@@ -431,10 +431,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":"Get Investment"}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 13:23:44 GMT
+  recorded_at: Wed, 05 Aug 2020 13:47:36 GMT
 - request:
     method: get
-    uri: http://127.0.0.1:9554/session/e46827fe4235ad3d3703a8f04a42133b/element/5dd1548c-a089-447e-891e-a0f1c2067a01/text
+    uri: http://127.0.0.1:9558/session/dd7f14f9956cb7ed4997fd8d1e95d247/element/040417fd-7f8b-4702-be14-8a401e7576e6/text
     body:
       encoding: US-ASCII
       string: ''
@@ -464,10 +464,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":"Become a Member"}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 13:23:44 GMT
+  recorded_at: Wed, 05 Aug 2020 13:47:36 GMT
 - request:
     method: get
-    uri: http://127.0.0.1:9554/session/e46827fe4235ad3d3703a8f04a42133b/element/267d48d4-4d79-46f4-8183-b12b9c09d287/text
+    uri: http://127.0.0.1:9558/session/dd7f14f9956cb7ed4997fd8d1e95d247/element/d1d667d2-5dac-4208-a070-78a0c8af90d1/text
     body:
       encoding: US-ASCII
       string: ''
@@ -497,10 +497,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":"Start a Conversation"}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 13:23:44 GMT
+  recorded_at: Wed, 05 Aug 2020 13:47:36 GMT
 - request:
     method: delete
-    uri: http://127.0.0.1:9554/session/e46827fe4235ad3d3703a8f04a42133b/window
+    uri: http://127.0.0.1:9558/session/dd7f14f9956cb7ed4997fd8d1e95d247/window
     body:
       encoding: US-ASCII
       string: ''
@@ -528,5 +528,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":[]}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 13:23:44 GMT
+  recorded_at: Wed, 05 Aug 2020 13:47:36 GMT
 recorded_with: VCR 5.0.0

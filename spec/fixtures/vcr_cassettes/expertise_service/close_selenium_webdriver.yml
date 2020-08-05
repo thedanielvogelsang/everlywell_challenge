@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: delete
-    uri: http://127.0.0.1:9547/session/afb192b3091cd9f5c291e60693a2323e/window
+    uri: http://127.0.0.1:9547/session/26ee42858bd4fd8f91316414608ba60b/window
     body:
       encoding: US-ASCII
       string: ''
@@ -30,10 +30,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":[]}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 13:23:14 GMT
+  recorded_at: Wed, 05 Aug 2020 13:44:46 GMT
 - request:
     method: delete
-    uri: http://127.0.0.1:9548/session/fe12b1c0277e1bfe93b252e924e5e6b7/window
+    uri: http://127.0.0.1:9548/session/8ce01545ac2cf66a4636c1db87dd354a/window
     body:
       encoding: US-ASCII
       string: ''
@@ -61,10 +61,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":[]}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 13:23:19 GMT
+  recorded_at: Wed, 05 Aug 2020 13:44:48 GMT
 - request:
     method: delete
-    uri: http://127.0.0.1:9549/session/d349d1bfebbbcaeb99cdbb2fb18ded21/window
+    uri: http://127.0.0.1:9549/session/49224f4e1fe4d8ba61f16ec8f5bce8f3/window
     body:
       encoding: US-ASCII
       string: ''
@@ -92,10 +92,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":[]}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 13:23:23 GMT
+  recorded_at: Wed, 05 Aug 2020 13:44:52 GMT
 - request:
     method: delete
-    uri: http://127.0.0.1:9550/session/8e61762376dff27a1a20012f835be504/window
+    uri: http://127.0.0.1:9550/session/d4a5cf190f3869117cb99003be58b505/window
     body:
       encoding: US-ASCII
       string: ''
@@ -123,10 +123,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":[]}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 13:23:27 GMT
+  recorded_at: Wed, 05 Aug 2020 13:44:56 GMT
 - request:
     method: delete
-    uri: http://127.0.0.1:9551/session/9290162f5405315ef2ea0672fc1f875f/window
+    uri: http://127.0.0.1:9551/session/0fc1668c9e099539060c94a0c0924e3f/window
     body:
       encoding: US-ASCII
       string: ''
@@ -154,10 +154,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":[]}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 13:23:31 GMT
+  recorded_at: Wed, 05 Aug 2020 13:44:58 GMT
 - request:
     method: delete
-    uri: http://127.0.0.1:9552/session/0b56b71c09f0383eeed2b75c7349022f/window
+    uri: http://127.0.0.1:9552/session/a97881fa93f07031c2d45e726021c3a1/window
     body:
       encoding: US-ASCII
       string: ''
@@ -185,10 +185,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":[]}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 13:23:35 GMT
+  recorded_at: Wed, 05 Aug 2020 13:45:00 GMT
 - request:
     method: delete
-    uri: http://127.0.0.1:9553/session/40d4569294034407250b1990cbc04126/window
+    uri: http://127.0.0.1:9553/session/a6604593700143da48cbc0179c02c5b1/window
     body:
       encoding: US-ASCII
       string: ''
@@ -216,5 +216,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":[]}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 13:23:40 GMT
+  recorded_at: Wed, 05 Aug 2020 13:45:04 GMT
 recorded_with: VCR 5.0.0

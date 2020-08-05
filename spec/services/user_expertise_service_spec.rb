@@ -6,6 +6,10 @@ RSpec.describe UserExpertiseService, type: :service do
   let(:tiny_url_record) { TinyUrl.last }
   let(:known_website_with_tags) { 'https://www.coloradosolidarity.com/' }
 
+  before do
+    Expertise.destroy_all
+  end
+
   it 'initializes with a user' do
     expect(subject.user).to eq(user)
     expect(subject.sanitized_url).to eq(tiny_url_record.sanitized_url)

@@ -9,6 +9,8 @@ RSpec.describe SearchExpertiseService, type: :service do
       www.practicalbioethics.org/
     )
 
+    User.destroy_all
+
     4.times do |i|
       VCR.use_cassette('users_with_expertise/user_creation', record: :new_episodes) do
         user = User.create(name: Faker::Name.name, url: website_options[i])
@@ -71,63 +73,63 @@ RSpec.describe SearchExpertiseService, type: :service do
     end
 
     describe '#find_most_likely_match' do
-    context 'on direct match' do
-      let(:search_text) { user_expertise.sample }
+      context 'on direct match' do
+        let(:search_text) { user_expertise.sample }
 
-      it 'a user cannot match themselves' do
-        expect(find_most_likely_match).to eq(false)
-      end
-    end
-
-    context 'on direct match' do
-      let(:search_text) { friend_expertise.sample }
-
-      it 'a user cannot match users who are already friends' do
-        expect(find_most_likely_match).to eq(false)
-      end
-    end
-
-    context 'on indirect matching' do
-      let(:known_match) { "CARING CONVERSATIONS" }
-      let(:matched_expertise_term) { "CARING CONVERSATIONS®" }
-      let(:search_text) { known_match.downcase }
-      let(:jarow_distance) { subject.matcher.getDistance(known_match, matched_expertise_term) }
-      let(:likely_match) { [jarow_distance, medical_expert_non_friend.id, matched_expertise_term] }
-
-      it 'struggles on distinct case' do
-        expect(subject.matcher.getDistance(search_text, known_match) >= 0.5).to eq(false)
-      end
-
-      it 'upcases search_term and expertise to improve fuzzy-match' do
-        expect(find_most_likely_match).to eq(true)
-        expect(best_match).to eq([jarow_distance, medical_expert_non_friend.id, matched_expertise_term])
-      end
-
-      context 'with different wording' do
-        let(:known_match) { "Care convos" }
-
-        it 'still matches correct user and text as most likely' do
-          #this 'known match' is a slight adaptation of the known match above, enough to test
-          expect(find_most_likely_match).to eq(true)
-          expect(best_match).to eq([0.8119975262832406, medical_expert_non_friend.id, "CARING CONVERSATIONS®"])
+        it 'a user cannot match themselves' do
+          expect(find_most_likely_match).to eq(false)
         end
       end
 
-      context 'with no perfect match' do
-        let(:search_text) { "Caring conversations and covid" }
-        let(:known_match) { search_text.upcase }
-        let(:less_likely_match) { [0.9201840894148586, medical_expert_non_friend.id, "Caring Conversations COVID-19 Tip Sheet"] }
+      context 'on direct match' do
+        let(:search_text) { friend_expertise.sample }
 
-        it 'will sort matches and choose highest jarow coefficient as most-likely match' do
+        it 'a user cannot match users who are already friends' do
+          expect(find_most_likely_match).to eq(false)
+        end
+      end
+
+      context 'on indirect matching' do
+        let(:known_match) { "CARING CONVERSATIONS" }
+        let(:matched_expertise_term) { "CARING CONVERSATIONS®" }
+        let(:search_text) { known_match.downcase }
+        let(:jarow_distance) { subject.matcher.getDistance(known_match, matched_expertise_term) }
+        let(:likely_match) { [jarow_distance, medical_expert_non_friend.id, matched_expertise_term] }
+
+        it 'struggles on distinct case' do
+          expect(subject.matcher.getDistance(search_text, known_match) >= 0.5).to eq(false)
+        end
+
+        it 'upcases search_term and expertise to improve fuzzy-match' do
           expect(find_most_likely_match).to eq(true)
-          expect(possible_matches.length > 1).to eq(true)
+          expect(best_match).to eq([jarow_distance, medical_expert_non_friend.id, matched_expertise_term])
+        end
 
-          expect(possible_matches).to eq([less_likely_match, likely_match])
-          expect(best_match).to eq(likely_match)
-          expect(possible_matches.map{|match| match[0] }).to eq([less_likely_match[0], likely_match[0]])
+        context 'with different wording' do
+          let(:known_match) { "Care convos" }
+
+          it 'still matches correct user and text as most likely' do
+            #this 'known match' is a slight adaptation of the known match above, enough to test
+            expect(find_most_likely_match).to eq(true)
+            expect(best_match).to eq([0.8119975262832406, medical_expert_non_friend.id, "CARING CONVERSATIONS®"])
+          end
+        end
+
+        context 'with no perfect match' do
+          let(:search_text) { "Caring conversations and covid" }
+          let(:known_match) { search_text.upcase }
+          let(:less_likely_match) { [0.9201840894148586, medical_expert_non_friend.id, "Caring Conversations COVID-19 Tip Sheet"] }
+
+          it 'will sort matches and choose highest jarow coefficient as most-likely match' do
+            expect(find_most_likely_match).to eq(true)
+            expect(possible_matches.length > 1).to eq(true)
+
+            expect(possible_matches).to eq([less_likely_match, likely_match])
+            expect(best_match).to eq(likely_match)
+            expect(possible_matches.map{|match| match[0] }).to eq([less_likely_match[0], likely_match[0]])
+          end
         end
       end
     end
-  end
   end
 end
