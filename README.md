@@ -22,24 +22,18 @@ rails '~> 6.0.3', '>= 6.0.3.2'
 
 * System dependencies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
+[brew](https://brew.sh/)
 
 * How to run the test suite
 
 To run test suite, use the command 'rspec' from within the parent folder.
 You should see *** passing tests.
 
-* Services (job queues, cache servers, search engines, etc.)
-
 * Deployment instructions
 
-bundle install
+`bundle install`
 
-brew cask (install | upgrade) chromedriver
+`brew cask (install | upgrade) chromedriver`
 
 you may need to approve chromedriver if you see the following error:
 ```
@@ -60,4 +54,4 @@ run the following commands:
 `rake db:seed`
 
 then fireup the app with `rails server`
-* ...
+
