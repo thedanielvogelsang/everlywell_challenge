@@ -1,5 +1,6 @@
 class Api::V1::SearchesController < Api::ApiController
   def create
+    byebug
     search = Search.new(search_params)
     if search.save
       render json: search, status: 200
