@@ -5,7 +5,15 @@ class User < ApplicationRecord
   validates :url, presence: true
   validates :tiny_url, presence: true
 
+  has_many :friendships
+  has_many :friends, through: :friendships
+
   attr_reader :sanitized_url
+
+  def add_friend(friend)
+    Friendship.create(user_id: id, friend_id: friend.id)
+    Friendship.create(user_id: friend.id, friend_id: id)
+  end
 
   def create_tiny_url
     tiny_url = TinyUrl.find_or_create_by(original_url: self.url)

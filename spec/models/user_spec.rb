@@ -37,4 +37,23 @@ RSpec.describe User, type: :model do
       expect(TinyUrl.count).to eq(1)
     end
   end
+
+  describe 'friendships' do
+    let(:friendship) { Friendship.create(user_id: user1.id, friend_id: user2.id) }
+
+    it 'can be created' do
+      expect(friendship.errors.empty?).to eq(true)
+    end
+
+    describe 'bi-directionality' do
+      before :each do
+        user1.add_friend(user2)
+      end
+
+      it 'can call friendships bi-directionally' do
+        expect(user1.friends.first).to eq(user2)
+        expect(user2.friends.first).to eq(user1)
+      end
+    end
+  end
 end
