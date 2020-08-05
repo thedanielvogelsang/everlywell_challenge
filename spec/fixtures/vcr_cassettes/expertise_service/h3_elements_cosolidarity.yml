@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: http://127.0.0.1:9550/session/0a9e22b4bf5060f86539f41d46064238/elements
+    uri: http://127.0.0.1:9552/session/0b56b71c09f0383eeed2b75c7349022f/elements
     body:
       encoding: UTF-8
       string: '{"using":"css selector","value":"h3"}'
@@ -30,12 +30,12 @@ http_interactions:
       - no-cache
     body:
       encoding: UTF-8
-      string: '{"value":[{"element-6066-11e4-a52e-4f735466cecf":"f07f6f8d-513a-46db-8a78-28ad3e9dcd5a"},{"element-6066-11e4-a52e-4f735466cecf":"8eec3e69-17d0-426d-81a1-83808549d59a"},{"element-6066-11e4-a52e-4f735466cecf":"857c5003-797a-4501-a41b-d48563bc1f26"}]}'
+      string: '{"value":[{"element-6066-11e4-a52e-4f735466cecf":"9b8d26b7-dc0d-4e5d-826f-23b9ad224e16"},{"element-6066-11e4-a52e-4f735466cecf":"a0965d10-76bb-48b0-a58e-1420c690814b"},{"element-6066-11e4-a52e-4f735466cecf":"59c6ba4f-f56a-41bb-803e-6fbee3d5f1d0"}]}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 12:59:34 GMT
+  recorded_at: Wed, 05 Aug 2020 13:23:35 GMT
 - request:
     method: get
-    uri: http://127.0.0.1:9550/session/0a9e22b4bf5060f86539f41d46064238/element/f07f6f8d-513a-46db-8a78-28ad3e9dcd5a/text
+    uri: http://127.0.0.1:9552/session/0b56b71c09f0383eeed2b75c7349022f/element/9b8d26b7-dc0d-4e5d-826f-23b9ad224e16/text
     body:
       encoding: US-ASCII
       string: ''
@@ -65,10 +65,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":"Get Investment"}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 12:59:34 GMT
+  recorded_at: Wed, 05 Aug 2020 13:23:35 GMT
 - request:
     method: get
-    uri: http://127.0.0.1:9550/session/0a9e22b4bf5060f86539f41d46064238/element/8eec3e69-17d0-426d-81a1-83808549d59a/text
+    uri: http://127.0.0.1:9552/session/0b56b71c09f0383eeed2b75c7349022f/element/a0965d10-76bb-48b0-a58e-1420c690814b/text
     body:
       encoding: US-ASCII
       string: ''
@@ -98,10 +98,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":"Become a Member"}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 12:59:34 GMT
+  recorded_at: Wed, 05 Aug 2020 13:23:35 GMT
 - request:
     method: get
-    uri: http://127.0.0.1:9550/session/0a9e22b4bf5060f86539f41d46064238/element/857c5003-797a-4501-a41b-d48563bc1f26/text
+    uri: http://127.0.0.1:9552/session/0b56b71c09f0383eeed2b75c7349022f/element/59c6ba4f-f56a-41bb-803e-6fbee3d5f1d0/text
     body:
       encoding: US-ASCII
       string: ''
@@ -131,5 +131,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":"Start a Conversation"}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 12:59:34 GMT
+  recorded_at: Wed, 05 Aug 2020 13:23:35 GMT
 recorded_with: VCR 5.0.0

@@ -60,7 +60,7 @@ RSpec.describe Api::V1::UsersController, type: :controller do
         user = User.last
         expect(user.name).to eq(valid_user_params[:name])
         expect(user.url).to eq(valid_user_params[:url])
-        expect(user.shortened_url).to be_truthy
+        expect(user.tiny_url).to be_truthy
         expect(user.expertise.count).to_not eq(0)
       end
     end

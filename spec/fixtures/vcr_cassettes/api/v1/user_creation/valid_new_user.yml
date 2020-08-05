@@ -1,0 +1,797 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://127.0.0.1:9545/session
+    body:
+      encoding: UTF-8
+      string: '{"desiredCapabilities":{"browserName":"chrome","version":"","platform":"ANY","javascriptEnabled":true,"cssSelectorsEnabled":true,"takesScreenshot":false,"nativeEvents":false,"rotatable":false,"goog:chromeOptions":{"args":["--no-sandbox","--headless","--ignore-certificate-errors","--disable-notifications","--window-size=1200,600","--disable-dev-shm-usage"]}},"capabilities":{"firstMatch":[{"browserName":"chrome","goog:chromeOptions":{"args":["--no-sandbox","--headless","--ignore-certificate-errors","--disable-notifications","--window-size=1200,600","--disable-dev-shm-usage"]}}]}}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.142.7 (ruby macosx)
+      Content-Length:
+      - '584'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '727'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"84.0.4147.105","chrome":{"chromedriverVersion":"84.0.4147.30
+        (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310})","userDataDir":"/var/folders/rk/sgp65zqx56z_drt41n9r2gvh0000gn/T/.com.google.Chrome.QnHhVG"},"goog:chromeOptions":{"debuggerAddress":"localhost:58816"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac
+        os x","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss
+        and notify","webauthn:virtualAuthenticators":true},"sessionId":"6783f0564be44b8d69e8e7ed9007d6ae"}}'
+    http_version: 
+  recorded_at: Wed, 05 Aug 2020 13:22:59 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9545/session/6783f0564be44b8d69e8e7ed9007d6ae/url
+    body:
+      encoding: UTF-8
+      string: '{"url":"http://practicalbioethics.org/"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.142.7 (ruby macosx)
+      Content-Length:
+      - '40'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '14'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":null}'
+    http_version: 
+  recorded_at: Wed, 05 Aug 2020 13:23:04 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9545/session/6783f0564be44b8d69e8e7ed9007d6ae/elements
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":"h1"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.142.7 (ruby macosx)
+      Content-Length:
+      - '37'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '406'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":[{"element-6066-11e4-a52e-4f735466cecf":"b7486d63-e192-482b-b608-dd664b3e9812"},{"element-6066-11e4-a52e-4f735466cecf":"e5a3796c-ce53-4d42-a793-8fc8e7ab217c"},{"element-6066-11e4-a52e-4f735466cecf":"e1ab8996-66d5-4bde-b745-b6928d5e02e4"},{"element-6066-11e4-a52e-4f735466cecf":"fd86dc19-bd7a-48f0-b877-6b934d808156"},{"element-6066-11e4-a52e-4f735466cecf":"2eead5fa-813a-4943-a353-dc6b1e40a4c3"}]}'
+    http_version: 
+  recorded_at: Wed, 05 Aug 2020 13:23:04 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9545/session/6783f0564be44b8d69e8e7ed9007d6ae/element/b7486d63-e192-482b-b608-dd664b3e9812/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.142.7 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '23'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Sign Me Up!"}'
+    http_version: 
+  recorded_at: Wed, 05 Aug 2020 13:23:04 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9545/session/6783f0564be44b8d69e8e7ed9007d6ae/element/e5a3796c-ce53-4d42-a793-8fc8e7ab217c/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.142.7 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '12'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":""}'
+    http_version: 
+  recorded_at: Wed, 05 Aug 2020 13:23:04 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9545/session/6783f0564be44b8d69e8e7ed9007d6ae/element/e1ab8996-66d5-4bde-b745-b6928d5e02e4/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.142.7 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '12'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":""}'
+    http_version: 
+  recorded_at: Wed, 05 Aug 2020 13:23:04 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9545/session/6783f0564be44b8d69e8e7ed9007d6ae/element/fd86dc19-bd7a-48f0-b877-6b934d808156/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.142.7 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '34'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJ2YWx1ZSI6IkNBUklORyBDT05WRVJTQVRJT05Twq4ifQ==
+    http_version: 
+  recorded_at: Wed, 05 Aug 2020 13:23:04 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9545/session/6783f0564be44b8d69e8e7ed9007d6ae/element/2eead5fa-813a-4943-a353-dc6b1e40a4c3/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.142.7 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '32'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"~ FOLLOW US ONLINE ~"}'
+    http_version: 
+  recorded_at: Wed, 05 Aug 2020 13:23:04 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9545/session/6783f0564be44b8d69e8e7ed9007d6ae/elements
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":"h2"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.142.7 (ruby macosx)
+      Content-Length:
+      - '37'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '12'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":[]}'
+    http_version: 
+  recorded_at: Wed, 05 Aug 2020 13:23:04 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9545/session/6783f0564be44b8d69e8e7ed9007d6ae/elements
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":"h3"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.142.7 (ruby macosx)
+      Content-Length:
+      - '37'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '1038'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":[{"element-6066-11e4-a52e-4f735466cecf":"4778f3af-d1a5-4bca-b6cc-0ef3fc4938a6"},{"element-6066-11e4-a52e-4f735466cecf":"61ecf34c-109e-416b-b7db-4a0ce406bba3"},{"element-6066-11e4-a52e-4f735466cecf":"f7c18bca-2f9f-4916-943e-5e1d4e66a562"},{"element-6066-11e4-a52e-4f735466cecf":"7261260f-0465-4ca2-8698-650fe43467aa"},{"element-6066-11e4-a52e-4f735466cecf":"910b7736-95d5-4857-92af-daaacd3f8499"},{"element-6066-11e4-a52e-4f735466cecf":"dea49ab0-a7e5-4110-a3a4-cca42f5d4199"},{"element-6066-11e4-a52e-4f735466cecf":"48a6ccc6-6344-4f8a-9159-b7f2b6b01852"},{"element-6066-11e4-a52e-4f735466cecf":"996b0b1f-21c5-4d02-8f0a-84a5c0f31661"},{"element-6066-11e4-a52e-4f735466cecf":"c1e3fb02-66fb-4c74-b214-a8bb76cf6279"},{"element-6066-11e4-a52e-4f735466cecf":"0e41c69f-333c-4983-972c-8836fd8fd588"},{"element-6066-11e4-a52e-4f735466cecf":"d7494afb-325a-4779-9f11-7d37784fb809"},{"element-6066-11e4-a52e-4f735466cecf":"691ec072-d369-4b10-a703-7d9f3f538342"},{"element-6066-11e4-a52e-4f735466cecf":"6afe6443-a415-4bcc-95ed-e87239dbc01e"}]}'
+    http_version: 
+  recorded_at: Wed, 05 Aug 2020 13:23:04 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9545/session/6783f0564be44b8d69e8e7ed9007d6ae/element/4778f3af-d1a5-4bca-b6cc-0ef3fc4938a6/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.142.7 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '32'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Response to Pandemic"}'
+    http_version: 
+  recorded_at: Wed, 05 Aug 2020 13:23:04 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9545/session/6783f0564be44b8d69e8e7ed9007d6ae/element/61ecf34c-109e-416b-b7db-4a0ce406bba3/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.142.7 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '68'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Advance Care Planning and Shared Medical Decision Making"}'
+    http_version: 
+  recorded_at: Wed, 05 Aug 2020 13:23:04 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9545/session/6783f0564be44b8d69e8e7ed9007d6ae/element/f7c18bca-2f9f-4916-943e-5e1d4e66a562/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.142.7 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '24'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Case Studies"}'
+    http_version: 
+  recorded_at: Wed, 05 Aug 2020 13:23:04 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9545/session/6783f0564be44b8d69e8e7ed9007d6ae/element/7261260f-0465-4ca2-8698-650fe43467aa/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.142.7 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '51'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Clinical Ethics Services and Consortium"}'
+    http_version: 
+  recorded_at: Wed, 05 Aug 2020 13:23:04 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9545/session/6783f0564be44b8d69e8e7ed9007d6ae/element/910b7736-95d5-4857-92af-daaacd3f8499/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.142.7 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '41'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Education Programs And Events"}'
+    http_version: 
+  recorded_at: Wed, 05 Aug 2020 13:23:04 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9545/session/6783f0564be44b8d69e8e7ed9007d6ae/element/dea49ab0-a7e5-4110-a3a4-cca42f5d4199/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.142.7 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '51'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Caring Conversations COVID-19 Tip Sheet"}'
+    http_version: 
+  recorded_at: Wed, 05 Aug 2020 13:23:04 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9545/session/6783f0564be44b8d69e8e7ed9007d6ae/element/48a6ccc6-6344-4f8a-9159-b7f2b6b01852/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.142.7 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '12'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":""}'
+    http_version: 
+  recorded_at: Wed, 05 Aug 2020 13:23:04 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9545/session/6783f0564be44b8d69e8e7ed9007d6ae/element/996b0b1f-21c5-4d02-8f0a-84a5c0f31661/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.142.7 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '12'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":""}'
+    http_version: 
+  recorded_at: Wed, 05 Aug 2020 13:23:04 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9545/session/6783f0564be44b8d69e8e7ed9007d6ae/element/c1e3fb02-66fb-4c74-b214-a8bb76cf6279/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.142.7 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '12'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":""}'
+    http_version: 
+  recorded_at: Wed, 05 Aug 2020 13:23:04 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9545/session/6783f0564be44b8d69e8e7ed9007d6ae/element/0e41c69f-333c-4983-972c-8836fd8fd588/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.142.7 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '31'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Customize Resources"}'
+    http_version: 
+  recorded_at: Wed, 05 Aug 2020 13:23:04 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9545/session/6783f0564be44b8d69e8e7ed9007d6ae/element/d7494afb-325a-4779-9f11-7d37784fb809/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.142.7 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '28'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Resource Liaison"}'
+    http_version: 
+  recorded_at: Wed, 05 Aug 2020 13:23:04 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9545/session/6783f0564be44b8d69e8e7ed9007d6ae/element/691ec072-d369-4b10-a703-7d9f3f538342/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.142.7 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '24'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"MyDirectives"}'
+    http_version: 
+  recorded_at: Wed, 05 Aug 2020 13:23:04 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9545/session/6783f0564be44b8d69e8e7ed9007d6ae/element/6afe6443-a415-4bcc-95ed-e87239dbc01e/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.142.7 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '12'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":""}'
+    http_version: 
+  recorded_at: Wed, 05 Aug 2020 13:23:04 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:9545/session/6783f0564be44b8d69e8e7ed9007d6ae/window
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.142.7 (ruby macosx)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '12'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":[]}'
+    http_version: 
+  recorded_at: Wed, 05 Aug 2020 13:23:05 GMT
+recorded_with: VCR 5.0.0
