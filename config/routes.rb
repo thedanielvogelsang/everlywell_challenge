@@ -7,5 +7,5 @@ Rails.application.routes.draw do
   end
   resources :users, only: [:index, :show]
   get 'tiny_urls/show'
-  post 'find_expert', to: 'api/v1/searches#find_expert' # find_expert_path
+  get 'find_expert', to: 'api/v1/searches#find_expert' # find_expert_path
 end

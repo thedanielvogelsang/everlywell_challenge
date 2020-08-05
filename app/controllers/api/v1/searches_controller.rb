@@ -1,4 +1,4 @@
-class Api::V1::SearchesController < ApplicationController
+class Api::V1::SearchesController < Api::ApiController
   def create
     search = Search.new(search_params)
     if search.save
@@ -9,7 +9,7 @@ class Api::V1::SearchesController < ApplicationController
   end
 
   def find_expert
-    if Search.create(search_text: permitted_params[:search]) && user = User.find(permitted_params[:id])
+    if Search.create(search_text: permitted_params[:search]) && user = User.find(permitted_params[:user_id].to_i)
       expert_path = SearchExpertiseService.new(search: Search.last, user: user).report_most_likely_match.to_json
       render json: expert_path, status: 200
     else
@@ -23,6 +23,6 @@ class Api::V1::SearchesController < ApplicationController
   end
 
   def permitted_params
-    params.require(:user).permit(:id, :search)
+    params.permit(:user_id, :search)
   end
 end

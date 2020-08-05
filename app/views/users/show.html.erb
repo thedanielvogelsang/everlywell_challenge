@@ -4,7 +4,7 @@
 </br>
 <h3> Website </h3>
 <h4> <%= @user.url %> </h4>
-<%= link_to @user.shortened_url,shortened_urls_show_path(shortened_url: @user.shortened_url) %>
+<%= link_to @user.tiny_url, tiny_urls_show_path(shortened_url: @user.tiny_url) %>
 </br>
 <h3> Current Expertise </h3>
 <ul>
@@ -24,3 +24,14 @@
     <% end %>
   <% end %>
 </ul>
+
+<h2>Search Site Expertise for new Friend</h2>
+<input id="searchInput" type="search" name="gsearch" data-userId="<%=@user.id%>" >
+<button id="searchSubmit" type="submit">Search</button>
+</br>
+<div id="searchLoader" class="loader" style="display:none"></div>
+</br>
+<div id='searchList'>
+<ul id='searchResults'>
+</ul>
+</div>

@@ -1,4 +1,4 @@
-class Api::V1::UsersController < ApplicationController
+class Api::V1::UsersController < Api::ApiController
   def index
     render json: User.all, status: 200
   end
