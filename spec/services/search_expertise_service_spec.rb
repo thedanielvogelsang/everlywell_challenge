@@ -131,5 +131,20 @@ RSpec.describe SearchExpertiseService, type: :service do
         end
       end
     end
+
+    describe '#report_most_likely_match' do
+      let(:call) { subject.report_most_likely_match }
+
+      context 'with no perfect match' do
+        let(:search_text) { "Caring conversations and covid" }
+        let(:matched_expertise_term) { "CARING CONVERSATIONS®" }
+
+        it 'will sort matches and choose highest jarow coefficient as most-likely match' do
+          expect(call).to eq(
+            "#{user.name}-->#{friend_of_user.name}-->#{medical_expert_non_friend.name}(#{matched_expertise_term})"
+          )
+        end
+      end
+    end
   end
 end

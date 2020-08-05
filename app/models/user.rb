@@ -9,6 +9,8 @@ class User < ApplicationRecord
   has_many :friends, through: :friendships
   has_many :expertise, dependent: :destroy
 
+  before_destroy :remove_old_friendships
+
   attr_reader :sanitized_url
 
   def add_friend(friend)
@@ -28,5 +30,11 @@ class User < ApplicationRecord
     elsif friend.class == Integer
       Friendship.exists?(user_id: id, friend_id: friend)
     end
+  end
+
+  private
+
+  def remove_old_friendships
+    Friendship.where("user_id = ? OR friend_id = ?", id, id).destroy_all
   end
 end

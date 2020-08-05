@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://127.0.0.1:9549/session/49224f4e1fe4d8ba61f16ec8f5bce8f3/url
+    uri: http://127.0.0.1:9549/session/3f90607190e336bbc1b4951f10477725/url
     body:
       encoding: US-ASCII
       string: ''
@@ -32,5 +32,54 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":"https://www.coloradosolidarity.com/"}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 13:44:52 GMT
+  recorded_at: Wed, 05 Aug 2020 14:01:00 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9553/session/5cc028bead9b11b3d4555ba48614b2a2/url
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.142.7 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Length:
+      - '1393'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"error":"invalid session id","message":"invalid session id","stacktrace":"0   chromedriver                        0x000000010fa37c49
+        chromedriver + 4893769\n1   chromedriver                        0x000000010f9d10e3
+        chromedriver + 4473059\n2   chromedriver                        0x000000010f644752
+        chromedriver + 751442\n3   chromedriver                        0x000000010f5a7e9c
+        chromedriver + 110236\n4   chromedriver                        0x000000010f5cef3c
+        chromedriver + 270140\n5   chromedriver                        0x000000010f5cd302
+        chromedriver + 262914\n6   chromedriver                        0x000000010f5ccb87
+        chromedriver + 260999\n7   chromedriver                        0x000000010f5923c9
+        chromedriver + 21449\n8   chromedriver                        0x000000010f9f95af
+        chromedriver + 4638127\n9   chromedriver                        0x000000010fa0691b
+        chromedriver + 4692251\n10  chromedriver                        0x000000010fa066bb
+        chromedriver + 4691643\n11  chromedriver                        0x000000010f9dd109
+        chromedriver + 4522249\n12  chromedriver                        0x000000010fa06ea3
+        chromedriver + 4693667\n13  chromedriver                        0x000000010f9ef073
+        chromedriver + 4595827\n14  chromedriver                        0x000000010f58fab7
+        chromedriver + 10935\n15  libdyld.dylib                       0x00007fff72fa9cc9
+        start + 1\n"}}'
+    http_version: 
+  recorded_at: Wed, 05 Aug 2020 14:03:39 GMT
 recorded_with: VCR 5.0.0

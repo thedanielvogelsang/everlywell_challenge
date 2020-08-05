@@ -13,6 +13,19 @@ class SearchExpertiseService
     @matches = []
   end
 
+  def report_most_likely_match
+    if find_most_likely_match
+      friend_matcher = FriendMatcherService.new(search_user: user, new_friend: new_friend)
+      if friend_matcher.find_friend_path
+        return format_friend_results(friend_matcher.path)
+      else
+        return "Match found, but no path between users"
+      end
+    else
+      return "No matched user could be found!"
+    end
+  end
+
   def text_match_known_expertise
     all_expertise = Expertise.where.not(user_id: user.id).pluck(:user_id, :website_text)
     likely_matches = all_expertise.select do |possible_match|
@@ -44,5 +57,10 @@ class SearchExpertiseService
     else
       return false
     end
+  end
+
+  private
+  def format_friend_results(ids)
+    ids.reverse.map{ |u| User.find(u).name }.join('-->') + "(#{matched_term})"
   end
 end

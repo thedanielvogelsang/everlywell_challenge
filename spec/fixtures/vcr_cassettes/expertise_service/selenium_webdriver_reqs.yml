@@ -31,14 +31,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"84.0.4147.105","chrome":{"chromedriverVersion":"84.0.4147.30
-        (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310})","userDataDir":"/var/folders/rk/sgp65zqx56z_drt41n9r2gvh0000gn/T/.com.google.Chrome.4rQ21A"},"goog:chromeOptions":{"debuggerAddress":"localhost:59941"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac
+        (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310})","userDataDir":"/var/folders/rk/sgp65zqx56z_drt41n9r2gvh0000gn/T/.com.google.Chrome.ZJ2LfW"},"goog:chromeOptions":{"debuggerAddress":"localhost:61211"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac
         os x","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss
-        and notify","webauthn:virtualAuthenticators":true},"sessionId":"26ee42858bd4fd8f91316414608ba60b"}}'
+        and notify","webauthn:virtualAuthenticators":true},"sessionId":"2dcf2b3e7c39440f1372aa73aa4a850c"}}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 13:44:44 GMT
+  recorded_at: Wed, 05 Aug 2020 14:00:50 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9547/session/26ee42858bd4fd8f91316414608ba60b/url
+    uri: http://127.0.0.1:9547/session/2dcf2b3e7c39440f1372aa73aa4a850c/url
     body:
       encoding: UTF-8
       string: '{"url":"https://www.coloradosolidarity.com/"}'
@@ -68,7 +68,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":null}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 13:44:45 GMT
+  recorded_at: Wed, 05 Aug 2020 14:00:54 GMT
 - request:
     method: post
     uri: http://127.0.0.1:9548/session
@@ -100,14 +100,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"84.0.4147.105","chrome":{"chromedriverVersion":"84.0.4147.30
-        (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310})","userDataDir":"/var/folders/rk/sgp65zqx56z_drt41n9r2gvh0000gn/T/.com.google.Chrome.7sLYp8"},"goog:chromeOptions":{"debuggerAddress":"localhost:59969"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac
+        (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310})","userDataDir":"/var/folders/rk/sgp65zqx56z_drt41n9r2gvh0000gn/T/.com.google.Chrome.60NmTf"},"goog:chromeOptions":{"debuggerAddress":"localhost:61242"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac
         os x","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss
-        and notify","webauthn:virtualAuthenticators":true},"sessionId":"8ce01545ac2cf66a4636c1db87dd354a"}}'
+        and notify","webauthn:virtualAuthenticators":true},"sessionId":"a126b322e19f8344461f19112d33ef52"}}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 13:44:46 GMT
+  recorded_at: Wed, 05 Aug 2020 14:00:54 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9548/session/8ce01545ac2cf66a4636c1db87dd354a/url
+    uri: http://127.0.0.1:9548/session/a126b322e19f8344461f19112d33ef52/url
     body:
       encoding: UTF-8
       string: '{"url":"https://www.coloradosolidarity.com/"}'
@@ -137,7 +137,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":null}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 13:44:48 GMT
+  recorded_at: Wed, 05 Aug 2020 14:00:56 GMT
 - request:
     method: post
     uri: http://127.0.0.1:9549/session
@@ -169,14 +169,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"84.0.4147.105","chrome":{"chromedriverVersion":"84.0.4147.30
-        (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310})","userDataDir":"/var/folders/rk/sgp65zqx56z_drt41n9r2gvh0000gn/T/.com.google.Chrome.sA0pl3"},"goog:chromeOptions":{"debuggerAddress":"localhost:59997"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac
+        (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310})","userDataDir":"/var/folders/rk/sgp65zqx56z_drt41n9r2gvh0000gn/T/.com.google.Chrome.4iJ1AJ"},"goog:chromeOptions":{"debuggerAddress":"localhost:61267"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac
         os x","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss
-        and notify","webauthn:virtualAuthenticators":true},"sessionId":"49224f4e1fe4d8ba61f16ec8f5bce8f3"}}'
+        and notify","webauthn:virtualAuthenticators":true},"sessionId":"3f90607190e336bbc1b4951f10477725"}}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 13:44:48 GMT
+  recorded_at: Wed, 05 Aug 2020 14:00:56 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9549/session/49224f4e1fe4d8ba61f16ec8f5bce8f3/url
+    uri: http://127.0.0.1:9549/session/3f90607190e336bbc1b4951f10477725/url
     body:
       encoding: UTF-8
       string: '{"url":"https://www.coloradosolidarity.com/"}'
@@ -206,7 +206,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":null}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 13:44:52 GMT
+  recorded_at: Wed, 05 Aug 2020 14:01:00 GMT
 - request:
     method: post
     uri: http://127.0.0.1:9550/session
@@ -238,14 +238,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"84.0.4147.105","chrome":{"chromedriverVersion":"84.0.4147.30
-        (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310})","userDataDir":"/var/folders/rk/sgp65zqx56z_drt41n9r2gvh0000gn/T/.com.google.Chrome.eBUu7x"},"goog:chromeOptions":{"debuggerAddress":"localhost:60029"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac
+        (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310})","userDataDir":"/var/folders/rk/sgp65zqx56z_drt41n9r2gvh0000gn/T/.com.google.Chrome.svfhcu"},"goog:chromeOptions":{"debuggerAddress":"localhost:61297"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac
         os x","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss
-        and notify","webauthn:virtualAuthenticators":true},"sessionId":"d4a5cf190f3869117cb99003be58b505"}}'
+        and notify","webauthn:virtualAuthenticators":true},"sessionId":"963c9ed7162ae4c1c371a4973ae49527"}}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 13:44:52 GMT
+  recorded_at: Wed, 05 Aug 2020 14:01:01 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9550/session/d4a5cf190f3869117cb99003be58b505/url
+    uri: http://127.0.0.1:9550/session/963c9ed7162ae4c1c371a4973ae49527/url
     body:
       encoding: UTF-8
       string: '{"url":"https://www.coloradosolidarity.com/"}'
@@ -275,7 +275,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":null}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 13:44:56 GMT
+  recorded_at: Wed, 05 Aug 2020 14:01:04 GMT
 - request:
     method: post
     uri: http://127.0.0.1:9551/session
@@ -307,14 +307,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"84.0.4147.105","chrome":{"chromedriverVersion":"84.0.4147.30
-        (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310})","userDataDir":"/var/folders/rk/sgp65zqx56z_drt41n9r2gvh0000gn/T/.com.google.Chrome.QWcPOS"},"goog:chromeOptions":{"debuggerAddress":"localhost:60060"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac
+        (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310})","userDataDir":"/var/folders/rk/sgp65zqx56z_drt41n9r2gvh0000gn/T/.com.google.Chrome.XAOIpZ"},"goog:chromeOptions":{"debuggerAddress":"localhost:61329"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac
         os x","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss
-        and notify","webauthn:virtualAuthenticators":true},"sessionId":"0fc1668c9e099539060c94a0c0924e3f"}}'
+        and notify","webauthn:virtualAuthenticators":true},"sessionId":"3ca5875894e8fd3a8a57639bfb46f276"}}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 13:44:56 GMT
+  recorded_at: Wed, 05 Aug 2020 14:01:05 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9551/session/0fc1668c9e099539060c94a0c0924e3f/url
+    uri: http://127.0.0.1:9551/session/3ca5875894e8fd3a8a57639bfb46f276/url
     body:
       encoding: UTF-8
       string: '{"url":"https://www.coloradosolidarity.com/"}'
@@ -344,7 +344,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":null}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 13:44:58 GMT
+  recorded_at: Wed, 05 Aug 2020 14:01:09 GMT
 - request:
     method: post
     uri: http://127.0.0.1:9552/session
@@ -376,14 +376,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"84.0.4147.105","chrome":{"chromedriverVersion":"84.0.4147.30
-        (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310})","userDataDir":"/var/folders/rk/sgp65zqx56z_drt41n9r2gvh0000gn/T/.com.google.Chrome.xBYfBq"},"goog:chromeOptions":{"debuggerAddress":"localhost:60092"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac
+        (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310})","userDataDir":"/var/folders/rk/sgp65zqx56z_drt41n9r2gvh0000gn/T/.com.google.Chrome.E0upbb"},"goog:chromeOptions":{"debuggerAddress":"localhost:61366"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac
         os x","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss
-        and notify","webauthn:virtualAuthenticators":true},"sessionId":"a97881fa93f07031c2d45e726021c3a1"}}'
+        and notify","webauthn:virtualAuthenticators":true},"sessionId":"77fb1995881b32c445ba845231ac6ea1"}}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 13:44:59 GMT
+  recorded_at: Wed, 05 Aug 2020 14:01:10 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9552/session/a97881fa93f07031c2d45e726021c3a1/url
+    uri: http://127.0.0.1:9552/session/77fb1995881b32c445ba845231ac6ea1/url
     body:
       encoding: UTF-8
       string: '{"url":"https://www.coloradosolidarity.com/"}'
@@ -413,7 +413,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":null}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 13:45:00 GMT
+  recorded_at: Wed, 05 Aug 2020 14:01:13 GMT
 - request:
     method: post
     uri: http://127.0.0.1:9553/session
@@ -445,14 +445,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"84.0.4147.105","chrome":{"chromedriverVersion":"84.0.4147.30
-        (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310})","userDataDir":"/var/folders/rk/sgp65zqx56z_drt41n9r2gvh0000gn/T/.com.google.Chrome.Opm2Al"},"goog:chromeOptions":{"debuggerAddress":"localhost:60121"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac
+        (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310})","userDataDir":"/var/folders/rk/sgp65zqx56z_drt41n9r2gvh0000gn/T/.com.google.Chrome.JLmjIH"},"goog:chromeOptions":{"debuggerAddress":"localhost:61401"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac
         os x","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss
-        and notify","webauthn:virtualAuthenticators":true},"sessionId":"a6604593700143da48cbc0179c02c5b1"}}'
+        and notify","webauthn:virtualAuthenticators":true},"sessionId":"5cc028bead9b11b3d4555ba48614b2a2"}}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 13:45:01 GMT
+  recorded_at: Wed, 05 Aug 2020 14:01:14 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9553/session/a6604593700143da48cbc0179c02c5b1/url
+    uri: http://127.0.0.1:9553/session/5cc028bead9b11b3d4555ba48614b2a2/url
     body:
       encoding: UTF-8
       string: '{"url":"https://www.coloradosolidarity.com/"}'
@@ -482,5 +482,281 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":null}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 13:45:04 GMT
+  recorded_at: Wed, 05 Aug 2020 14:01:17 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9554/session
+    body:
+      encoding: UTF-8
+      string: '{"desiredCapabilities":{"browserName":"chrome","version":"","platform":"ANY","javascriptEnabled":true,"cssSelectorsEnabled":true,"takesScreenshot":false,"nativeEvents":false,"rotatable":false,"goog:chromeOptions":{"args":["--no-sandbox","--headless","--ignore-certificate-errors","--disable-notifications","--window-size=1200,600","--disable-dev-shm-usage"]}},"capabilities":{"firstMatch":[{"browserName":"chrome","goog:chromeOptions":{"args":["--no-sandbox","--headless","--ignore-certificate-errors","--disable-notifications","--window-size=1200,600","--disable-dev-shm-usage"]}}]}}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.142.7 (ruby macosx)
+      Content-Length:
+      - '584'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '727'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"84.0.4147.105","chrome":{"chromedriverVersion":"84.0.4147.30
+        (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310})","userDataDir":"/var/folders/rk/sgp65zqx56z_drt41n9r2gvh0000gn/T/.com.google.Chrome.MpLTGM"},"goog:chromeOptions":{"debuggerAddress":"localhost:62279"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac
+        os x","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss
+        and notify","webauthn:virtualAuthenticators":true},"sessionId":"ac6d05a64bbf9452010cf1800f31c4c2"}}'
+    http_version: 
+  recorded_at: Wed, 05 Aug 2020 14:03:40 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9554/session/ac6d05a64bbf9452010cf1800f31c4c2/url
+    body:
+      encoding: UTF-8
+      string: '{"url":"https://www.coloradosolidarity.com/"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.142.7 (ruby macosx)
+      Content-Length:
+      - '45'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '14'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":null}'
+    http_version: 
+  recorded_at: Wed, 05 Aug 2020 14:03:43 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9555/session
+    body:
+      encoding: UTF-8
+      string: '{"desiredCapabilities":{"browserName":"chrome","version":"","platform":"ANY","javascriptEnabled":true,"cssSelectorsEnabled":true,"takesScreenshot":false,"nativeEvents":false,"rotatable":false,"goog:chromeOptions":{"args":["--no-sandbox","--headless","--ignore-certificate-errors","--disable-notifications","--window-size=1200,600","--disable-dev-shm-usage"]}},"capabilities":{"firstMatch":[{"browserName":"chrome","goog:chromeOptions":{"args":["--no-sandbox","--headless","--ignore-certificate-errors","--disable-notifications","--window-size=1200,600","--disable-dev-shm-usage"]}}]}}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.142.7 (ruby macosx)
+      Content-Length:
+      - '584'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '727'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"84.0.4147.105","chrome":{"chromedriverVersion":"84.0.4147.30
+        (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310})","userDataDir":"/var/folders/rk/sgp65zqx56z_drt41n9r2gvh0000gn/T/.com.google.Chrome.Ue86Is"},"goog:chromeOptions":{"debuggerAddress":"localhost:62309"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac
+        os x","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss
+        and notify","webauthn:virtualAuthenticators":true},"sessionId":"1d19e0048ea97d68be463dfae28add24"}}'
+    http_version: 
+  recorded_at: Wed, 05 Aug 2020 14:03:44 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9555/session/1d19e0048ea97d68be463dfae28add24/url
+    body:
+      encoding: UTF-8
+      string: '{"url":"https://www.coloradosolidarity.com/"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.142.7 (ruby macosx)
+      Content-Length:
+      - '45'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '14'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":null}'
+    http_version: 
+  recorded_at: Wed, 05 Aug 2020 14:03:47 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9556/session
+    body:
+      encoding: UTF-8
+      string: '{"desiredCapabilities":{"browserName":"chrome","version":"","platform":"ANY","javascriptEnabled":true,"cssSelectorsEnabled":true,"takesScreenshot":false,"nativeEvents":false,"rotatable":false,"goog:chromeOptions":{"args":["--no-sandbox","--headless","--ignore-certificate-errors","--disable-notifications","--window-size=1200,600","--disable-dev-shm-usage"]}},"capabilities":{"firstMatch":[{"browserName":"chrome","goog:chromeOptions":{"args":["--no-sandbox","--headless","--ignore-certificate-errors","--disable-notifications","--window-size=1200,600","--disable-dev-shm-usage"]}}]}}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.142.7 (ruby macosx)
+      Content-Length:
+      - '584'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '727'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"84.0.4147.105","chrome":{"chromedriverVersion":"84.0.4147.30
+        (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310})","userDataDir":"/var/folders/rk/sgp65zqx56z_drt41n9r2gvh0000gn/T/.com.google.Chrome.UG5Mg8"},"goog:chromeOptions":{"debuggerAddress":"localhost:62346"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac
+        os x","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss
+        and notify","webauthn:virtualAuthenticators":true},"sessionId":"ef5815d8563ca3462275d39ebf233b7b"}}'
+    http_version: 
+  recorded_at: Wed, 05 Aug 2020 14:03:48 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9556/session/ef5815d8563ca3462275d39ebf233b7b/url
+    body:
+      encoding: UTF-8
+      string: '{"url":"https://www.coloradosolidarity.com/"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.142.7 (ruby macosx)
+      Content-Length:
+      - '45'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '14'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":null}'
+    http_version: 
+  recorded_at: Wed, 05 Aug 2020 14:03:51 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9557/session
+    body:
+      encoding: UTF-8
+      string: '{"desiredCapabilities":{"browserName":"chrome","version":"","platform":"ANY","javascriptEnabled":true,"cssSelectorsEnabled":true,"takesScreenshot":false,"nativeEvents":false,"rotatable":false,"goog:chromeOptions":{"args":["--no-sandbox","--headless","--ignore-certificate-errors","--disable-notifications","--window-size=1200,600","--disable-dev-shm-usage"]}},"capabilities":{"firstMatch":[{"browserName":"chrome","goog:chromeOptions":{"args":["--no-sandbox","--headless","--ignore-certificate-errors","--disable-notifications","--window-size=1200,600","--disable-dev-shm-usage"]}}]}}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.142.7 (ruby macosx)
+      Content-Length:
+      - '584'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '727'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"84.0.4147.105","chrome":{"chromedriverVersion":"84.0.4147.30
+        (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310})","userDataDir":"/var/folders/rk/sgp65zqx56z_drt41n9r2gvh0000gn/T/.com.google.Chrome.mwQrpB"},"goog:chromeOptions":{"debuggerAddress":"localhost:62379"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac
+        os x","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss
+        and notify","webauthn:virtualAuthenticators":true},"sessionId":"fcf45c448e50ba788f2688f50e2ea1ee"}}'
+    http_version: 
+  recorded_at: Wed, 05 Aug 2020 14:03:52 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9557/session/fcf45c448e50ba788f2688f50e2ea1ee/url
+    body:
+      encoding: UTF-8
+      string: '{"url":"https://www.coloradosolidarity.com/"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.142.7 (ruby macosx)
+      Content-Length:
+      - '45'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '14'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":null}'
+    http_version: 
+  recorded_at: Wed, 05 Aug 2020 14:03:56 GMT
 recorded_with: VCR 5.0.0

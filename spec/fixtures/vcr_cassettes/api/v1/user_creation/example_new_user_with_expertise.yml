@@ -31,14 +31,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"84.0.4147.105","chrome":{"chromedriverVersion":"84.0.4147.30
-        (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310})","userDataDir":"/var/folders/rk/sgp65zqx56z_drt41n9r2gvh0000gn/T/.com.google.Chrome.zpapxm"},"goog:chromeOptions":{"debuggerAddress":"localhost:59836"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac
+        (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310})","userDataDir":"/var/folders/rk/sgp65zqx56z_drt41n9r2gvh0000gn/T/.com.google.Chrome.eKHpfU"},"goog:chromeOptions":{"debuggerAddress":"localhost:61101"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac
         os x","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss
-        and notify","webauthn:virtualAuthenticators":true},"sessionId":"584b8855b1086a54a6fadf1b26d10ab8"}}'
+        and notify","webauthn:virtualAuthenticators":true},"sessionId":"b7e2313daae551a8a8ffaeaf45db00c8"}}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 13:44:34 GMT
+  recorded_at: Wed, 05 Aug 2020 14:00:37 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9544/session/584b8855b1086a54a6fadf1b26d10ab8/url
+    uri: http://127.0.0.1:9544/session/b7e2313daae551a8a8ffaeaf45db00c8/url
     body:
       encoding: UTF-8
       string: '{"url":"http://example.com"}'
@@ -68,10 +68,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":null}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 13:44:34 GMT
+  recorded_at: Wed, 05 Aug 2020 14:00:37 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9544/session/584b8855b1086a54a6fadf1b26d10ab8/elements
+    uri: http://127.0.0.1:9544/session/b7e2313daae551a8a8ffaeaf45db00c8/elements
     body:
       encoding: UTF-8
       string: '{"using":"css selector","value":"h1"}'
@@ -99,12 +99,12 @@ http_interactions:
       - no-cache
     body:
       encoding: UTF-8
-      string: '{"value":[{"element-6066-11e4-a52e-4f735466cecf":"fd5b4774-5fcc-4cd0-873e-eb18e65796a8"}]}'
+      string: '{"value":[{"element-6066-11e4-a52e-4f735466cecf":"7536ba8b-1b55-498e-b7dd-c1924526ee96"}]}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 13:44:34 GMT
+  recorded_at: Wed, 05 Aug 2020 14:00:37 GMT
 - request:
     method: get
-    uri: http://127.0.0.1:9544/session/584b8855b1086a54a6fadf1b26d10ab8/element/fd5b4774-5fcc-4cd0-873e-eb18e65796a8/text
+    uri: http://127.0.0.1:9544/session/b7e2313daae551a8a8ffaeaf45db00c8/element/7536ba8b-1b55-498e-b7dd-c1924526ee96/text
     body:
       encoding: US-ASCII
       string: ''
@@ -134,10 +134,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":"Example Domain"}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 13:44:34 GMT
+  recorded_at: Wed, 05 Aug 2020 14:00:37 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9544/session/584b8855b1086a54a6fadf1b26d10ab8/elements
+    uri: http://127.0.0.1:9544/session/b7e2313daae551a8a8ffaeaf45db00c8/elements
     body:
       encoding: UTF-8
       string: '{"using":"css selector","value":"h2"}'
@@ -167,10 +167,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":[]}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 13:44:34 GMT
+  recorded_at: Wed, 05 Aug 2020 14:00:37 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9544/session/584b8855b1086a54a6fadf1b26d10ab8/elements
+    uri: http://127.0.0.1:9544/session/b7e2313daae551a8a8ffaeaf45db00c8/elements
     body:
       encoding: UTF-8
       string: '{"using":"css selector","value":"h3"}'
@@ -200,10 +200,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":[]}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 13:44:34 GMT
+  recorded_at: Wed, 05 Aug 2020 14:00:37 GMT
 - request:
     method: delete
-    uri: http://127.0.0.1:9544/session/584b8855b1086a54a6fadf1b26d10ab8/window
+    uri: http://127.0.0.1:9544/session/b7e2313daae551a8a8ffaeaf45db00c8/window
     body:
       encoding: US-ASCII
       string: ''
@@ -231,5 +231,237 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":[]}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 13:44:34 GMT
+  recorded_at: Wed, 05 Aug 2020 14:00:37 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9548/session
+    body:
+      encoding: UTF-8
+      string: '{"desiredCapabilities":{"browserName":"chrome","version":"","platform":"ANY","javascriptEnabled":true,"cssSelectorsEnabled":true,"takesScreenshot":false,"nativeEvents":false,"rotatable":false,"goog:chromeOptions":{"args":["--no-sandbox","--headless","--ignore-certificate-errors","--disable-notifications","--window-size=1200,600","--disable-dev-shm-usage"]}},"capabilities":{"firstMatch":[{"browserName":"chrome","goog:chromeOptions":{"args":["--no-sandbox","--headless","--ignore-certificate-errors","--disable-notifications","--window-size=1200,600","--disable-dev-shm-usage"]}}]}}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.142.7 (ruby macosx)
+      Content-Length:
+      - '584'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '727'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"84.0.4147.105","chrome":{"chromedriverVersion":"84.0.4147.30
+        (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310})","userDataDir":"/var/folders/rk/sgp65zqx56z_drt41n9r2gvh0000gn/T/.com.google.Chrome.8wEYJj"},"goog:chromeOptions":{"debuggerAddress":"localhost:62167"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac
+        os x","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss
+        and notify","webauthn:virtualAuthenticators":true},"sessionId":"93041a429b0a3ddb91e12f04d290fe2c"}}'
+    http_version: 
+  recorded_at: Wed, 05 Aug 2020 14:03:27 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9548/session/93041a429b0a3ddb91e12f04d290fe2c/url
+    body:
+      encoding: UTF-8
+      string: '{"url":"http://example.com"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.142.7 (ruby macosx)
+      Content-Length:
+      - '28'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '14'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":null}'
+    http_version: 
+  recorded_at: Wed, 05 Aug 2020 14:03:28 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9548/session/93041a429b0a3ddb91e12f04d290fe2c/elements
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":"h1"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.142.7 (ruby macosx)
+      Content-Length:
+      - '37'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '90'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":[{"element-6066-11e4-a52e-4f735466cecf":"401d2a09-e979-4e60-9f21-138afea11c36"}]}'
+    http_version: 
+  recorded_at: Wed, 05 Aug 2020 14:03:28 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9548/session/93041a429b0a3ddb91e12f04d290fe2c/element/401d2a09-e979-4e60-9f21-138afea11c36/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.142.7 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '26'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Example Domain"}'
+    http_version: 
+  recorded_at: Wed, 05 Aug 2020 14:03:28 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9548/session/93041a429b0a3ddb91e12f04d290fe2c/elements
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":"h2"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.142.7 (ruby macosx)
+      Content-Length:
+      - '37'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '12'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":[]}'
+    http_version: 
+  recorded_at: Wed, 05 Aug 2020 14:03:28 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9548/session/93041a429b0a3ddb91e12f04d290fe2c/elements
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":"h3"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.142.7 (ruby macosx)
+      Content-Length:
+      - '37'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '12'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":[]}'
+    http_version: 
+  recorded_at: Wed, 05 Aug 2020 14:03:28 GMT
+- request:
+    method: delete
+    uri: http://127.0.0.1:9548/session/93041a429b0a3ddb91e12f04d290fe2c/window
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.142.7 (ruby macosx)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '12'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":[]}'
+    http_version: 
+  recorded_at: Wed, 05 Aug 2020 14:03:28 GMT
 recorded_with: VCR 5.0.0
