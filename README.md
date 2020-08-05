@@ -24,11 +24,6 @@ rails '~> 6.0.3', '>= 6.0.3.2'
 
 * Configuration
 
-ENV Configuration
-```
-
-```
-
 * Database creation
 
 * Database initialization
@@ -58,8 +53,11 @@ other troubleshooting options: [here](https://stackoverflow.com/questions/603620
 clone the repo
 cd into repo and run `bundle install`
 
-`bundle exec figaro install` to use config/application.yml
+run the following commands:
 
-add above ENV vars to either application.yml using figaro syntax, or to your bash_profile
+`rake db:create`
+`rake db:migrate`
+`rake db:seed`
 
+then fireup the app with `rails server`
 * ...
