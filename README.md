@@ -5,14 +5,16 @@ This application is my submission for the [Everlywell Challenge](https://github.
 Met requirements include:
 
 API for creating users, searches, and friendships
-Users can befriend (bi-directionally) eachother
-Users have an #index and #show page from which you can see data about users:
-*name
-*url
-*tiny_url
-*website 'expertise' (scraped h1-h3 tags)
-*links to friends
-*search bar which can find non-friends with fuzzy-matched 'expertise'
+
+1. Users can befriend (bi-directionally) eachother
+2. Users have an #index and #show page from which you can see data about users:
+* name
+* url
+* tiny_url
+* website 'expertise' (scraped h1-h3 tags)
+* links to friends
+* search bar which can find non-friends with fuzzy-matched 'expertise'
+3. Users can search for expertise outside their network
 
 Things you may want to cover:
 
