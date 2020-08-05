@@ -36,6 +36,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'database_cleaner'
   gem 'faker'
+  gem 'rubocop-faker'
   gem 'shoulda-matchers'
   gem 'webmock' # https://github.com/bblimke/webmock
   gem 'vcr' # https://github.com/vcr/vcr
