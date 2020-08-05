@@ -2,800 +2,6 @@
 http_interactions:
 - request:
     method: post
-    uri: http://127.0.0.1:9545/session
-    body:
-      encoding: UTF-8
-      string: '{"desiredCapabilities":{"browserName":"chrome","version":"","platform":"ANY","javascriptEnabled":true,"cssSelectorsEnabled":true,"takesScreenshot":false,"nativeEvents":false,"rotatable":false,"goog:chromeOptions":{"args":["--no-sandbox","--headless","--ignore-certificate-errors","--disable-notifications","--window-size=1200,600","--disable-dev-shm-usage"]}},"capabilities":{"firstMatch":[{"browserName":"chrome","goog:chromeOptions":{"args":["--no-sandbox","--headless","--ignore-certificate-errors","--disable-notifications","--window-size=1200,600","--disable-dev-shm-usage"]}}]}}'
-    headers:
-      Accept:
-      - application/json
-      Content-Type:
-      - application/json; charset=UTF-8
-      User-Agent:
-      - selenium/3.142.7 (ruby macosx)
-      Content-Length:
-      - '584'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Length:
-      - '727'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: UTF-8
-      string: '{"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"84.0.4147.105","chrome":{"chromedriverVersion":"84.0.4147.30
-        (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310})","userDataDir":"/var/folders/rk/sgp65zqx56z_drt41n9r2gvh0000gn/T/.com.google.Chrome.MT5s9O"},"goog:chromeOptions":{"debuggerAddress":"localhost:61115"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac
-        os x","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss
-        and notify","webauthn:virtualAuthenticators":true},"sessionId":"5aab8f72f8894b0a55bce6266b188a60"}}'
-    http_version: 
-  recorded_at: Wed, 05 Aug 2020 14:00:38 GMT
-- request:
-    method: post
-    uri: http://127.0.0.1:9545/session/5aab8f72f8894b0a55bce6266b188a60/url
-    body:
-      encoding: UTF-8
-      string: '{"url":"http://practicalbioethics.org/"}'
-    headers:
-      Accept:
-      - application/json
-      Content-Type:
-      - application/json; charset=UTF-8
-      User-Agent:
-      - selenium/3.142.7 (ruby macosx)
-      Content-Length:
-      - '40'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Length:
-      - '14'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: UTF-8
-      string: '{"value":null}'
-    http_version: 
-  recorded_at: Wed, 05 Aug 2020 14:00:44 GMT
-- request:
-    method: post
-    uri: http://127.0.0.1:9545/session/5aab8f72f8894b0a55bce6266b188a60/elements
-    body:
-      encoding: UTF-8
-      string: '{"using":"css selector","value":"h1"}'
-    headers:
-      Accept:
-      - application/json
-      Content-Type:
-      - application/json; charset=UTF-8
-      User-Agent:
-      - selenium/3.142.7 (ruby macosx)
-      Content-Length:
-      - '37'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Length:
-      - '406'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: UTF-8
-      string: '{"value":[{"element-6066-11e4-a52e-4f735466cecf":"fc067631-1635-4b90-a43d-e1454d917bdd"},{"element-6066-11e4-a52e-4f735466cecf":"83598e67-6e33-4445-87c8-6c2c20bdbfb9"},{"element-6066-11e4-a52e-4f735466cecf":"12024b33-a959-458a-aec3-b797f37f096d"},{"element-6066-11e4-a52e-4f735466cecf":"750cffc8-9320-446d-b698-da6dfc21b970"},{"element-6066-11e4-a52e-4f735466cecf":"04d0a0db-160a-4099-b2a0-e695e1792d33"}]}'
-    http_version: 
-  recorded_at: Wed, 05 Aug 2020 14:00:44 GMT
-- request:
-    method: get
-    uri: http://127.0.0.1:9545/session/5aab8f72f8894b0a55bce6266b188a60/element/fc067631-1635-4b90-a43d-e1454d917bdd/text
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      Content-Type:
-      - application/json; charset=UTF-8
-      User-Agent:
-      - selenium/3.142.7 (ruby macosx)
-      Cache-Control:
-      - no-cache
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Length:
-      - '23'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: UTF-8
-      string: '{"value":"Sign Me Up!"}'
-    http_version: 
-  recorded_at: Wed, 05 Aug 2020 14:00:44 GMT
-- request:
-    method: get
-    uri: http://127.0.0.1:9545/session/5aab8f72f8894b0a55bce6266b188a60/element/83598e67-6e33-4445-87c8-6c2c20bdbfb9/text
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      Content-Type:
-      - application/json; charset=UTF-8
-      User-Agent:
-      - selenium/3.142.7 (ruby macosx)
-      Cache-Control:
-      - no-cache
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Length:
-      - '12'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: UTF-8
-      string: '{"value":""}'
-    http_version: 
-  recorded_at: Wed, 05 Aug 2020 14:00:44 GMT
-- request:
-    method: get
-    uri: http://127.0.0.1:9545/session/5aab8f72f8894b0a55bce6266b188a60/element/12024b33-a959-458a-aec3-b797f37f096d/text
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      Content-Type:
-      - application/json; charset=UTF-8
-      User-Agent:
-      - selenium/3.142.7 (ruby macosx)
-      Cache-Control:
-      - no-cache
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Length:
-      - '12'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: UTF-8
-      string: '{"value":""}'
-    http_version: 
-  recorded_at: Wed, 05 Aug 2020 14:00:44 GMT
-- request:
-    method: get
-    uri: http://127.0.0.1:9545/session/5aab8f72f8894b0a55bce6266b188a60/element/750cffc8-9320-446d-b698-da6dfc21b970/text
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      Content-Type:
-      - application/json; charset=UTF-8
-      User-Agent:
-      - selenium/3.142.7 (ruby macosx)
-      Cache-Control:
-      - no-cache
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Length:
-      - '34'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        eyJ2YWx1ZSI6IkNBUklORyBDT05WRVJTQVRJT05Twq4ifQ==
-    http_version: 
-  recorded_at: Wed, 05 Aug 2020 14:00:44 GMT
-- request:
-    method: get
-    uri: http://127.0.0.1:9545/session/5aab8f72f8894b0a55bce6266b188a60/element/04d0a0db-160a-4099-b2a0-e695e1792d33/text
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      Content-Type:
-      - application/json; charset=UTF-8
-      User-Agent:
-      - selenium/3.142.7 (ruby macosx)
-      Cache-Control:
-      - no-cache
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Length:
-      - '32'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: UTF-8
-      string: '{"value":"~ FOLLOW US ONLINE ~"}'
-    http_version: 
-  recorded_at: Wed, 05 Aug 2020 14:00:44 GMT
-- request:
-    method: post
-    uri: http://127.0.0.1:9545/session/5aab8f72f8894b0a55bce6266b188a60/elements
-    body:
-      encoding: UTF-8
-      string: '{"using":"css selector","value":"h2"}'
-    headers:
-      Accept:
-      - application/json
-      Content-Type:
-      - application/json; charset=UTF-8
-      User-Agent:
-      - selenium/3.142.7 (ruby macosx)
-      Content-Length:
-      - '37'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Length:
-      - '12'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: UTF-8
-      string: '{"value":[]}'
-    http_version: 
-  recorded_at: Wed, 05 Aug 2020 14:00:44 GMT
-- request:
-    method: post
-    uri: http://127.0.0.1:9545/session/5aab8f72f8894b0a55bce6266b188a60/elements
-    body:
-      encoding: UTF-8
-      string: '{"using":"css selector","value":"h3"}'
-    headers:
-      Accept:
-      - application/json
-      Content-Type:
-      - application/json; charset=UTF-8
-      User-Agent:
-      - selenium/3.142.7 (ruby macosx)
-      Content-Length:
-      - '37'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Length:
-      - '1038'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: UTF-8
-      string: '{"value":[{"element-6066-11e4-a52e-4f735466cecf":"a6b67ecb-2314-4098-bdc4-8941519936ae"},{"element-6066-11e4-a52e-4f735466cecf":"c019e2d7-76b4-4ac8-b49f-3ce671b890da"},{"element-6066-11e4-a52e-4f735466cecf":"4b491b0c-5373-482a-9c08-13d8605af494"},{"element-6066-11e4-a52e-4f735466cecf":"41a80049-16f7-4962-b5a1-05fe85eed9e8"},{"element-6066-11e4-a52e-4f735466cecf":"cc576eb7-59a2-4d1a-9620-aae8f855eeda"},{"element-6066-11e4-a52e-4f735466cecf":"4bb18390-5911-4126-8182-7540c4f9ce72"},{"element-6066-11e4-a52e-4f735466cecf":"ef2bfaa4-f0c5-4ea6-b797-aca3d31569e7"},{"element-6066-11e4-a52e-4f735466cecf":"71fbfcee-c428-435e-be13-5cd1d42c5c06"},{"element-6066-11e4-a52e-4f735466cecf":"1d82ad31-a4ad-4d2d-881c-aa78900c7e7e"},{"element-6066-11e4-a52e-4f735466cecf":"6ad94e0e-f66a-4a6d-af2b-9ee3c12d4c04"},{"element-6066-11e4-a52e-4f735466cecf":"ef275da3-c460-4887-b919-2cdf06084a72"},{"element-6066-11e4-a52e-4f735466cecf":"eb23e5b4-e13d-4c44-aa10-ff1c9f6f23d6"},{"element-6066-11e4-a52e-4f735466cecf":"9df93438-ab8e-41fe-949f-dd303a9c1c85"}]}'
-    http_version: 
-  recorded_at: Wed, 05 Aug 2020 14:00:44 GMT
-- request:
-    method: get
-    uri: http://127.0.0.1:9545/session/5aab8f72f8894b0a55bce6266b188a60/element/a6b67ecb-2314-4098-bdc4-8941519936ae/text
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      Content-Type:
-      - application/json; charset=UTF-8
-      User-Agent:
-      - selenium/3.142.7 (ruby macosx)
-      Cache-Control:
-      - no-cache
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Length:
-      - '32'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: UTF-8
-      string: '{"value":"Response to Pandemic"}'
-    http_version: 
-  recorded_at: Wed, 05 Aug 2020 14:00:44 GMT
-- request:
-    method: get
-    uri: http://127.0.0.1:9545/session/5aab8f72f8894b0a55bce6266b188a60/element/c019e2d7-76b4-4ac8-b49f-3ce671b890da/text
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      Content-Type:
-      - application/json; charset=UTF-8
-      User-Agent:
-      - selenium/3.142.7 (ruby macosx)
-      Cache-Control:
-      - no-cache
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Length:
-      - '68'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: UTF-8
-      string: '{"value":"Advance Care Planning and Shared Medical Decision Making"}'
-    http_version: 
-  recorded_at: Wed, 05 Aug 2020 14:00:44 GMT
-- request:
-    method: get
-    uri: http://127.0.0.1:9545/session/5aab8f72f8894b0a55bce6266b188a60/element/4b491b0c-5373-482a-9c08-13d8605af494/text
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      Content-Type:
-      - application/json; charset=UTF-8
-      User-Agent:
-      - selenium/3.142.7 (ruby macosx)
-      Cache-Control:
-      - no-cache
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Length:
-      - '24'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: UTF-8
-      string: '{"value":"Case Studies"}'
-    http_version: 
-  recorded_at: Wed, 05 Aug 2020 14:00:44 GMT
-- request:
-    method: get
-    uri: http://127.0.0.1:9545/session/5aab8f72f8894b0a55bce6266b188a60/element/41a80049-16f7-4962-b5a1-05fe85eed9e8/text
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      Content-Type:
-      - application/json; charset=UTF-8
-      User-Agent:
-      - selenium/3.142.7 (ruby macosx)
-      Cache-Control:
-      - no-cache
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Length:
-      - '51'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: UTF-8
-      string: '{"value":"Clinical Ethics Services and Consortium"}'
-    http_version: 
-  recorded_at: Wed, 05 Aug 2020 14:00:44 GMT
-- request:
-    method: get
-    uri: http://127.0.0.1:9545/session/5aab8f72f8894b0a55bce6266b188a60/element/cc576eb7-59a2-4d1a-9620-aae8f855eeda/text
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      Content-Type:
-      - application/json; charset=UTF-8
-      User-Agent:
-      - selenium/3.142.7 (ruby macosx)
-      Cache-Control:
-      - no-cache
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Length:
-      - '41'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: UTF-8
-      string: '{"value":"Education Programs And Events"}'
-    http_version: 
-  recorded_at: Wed, 05 Aug 2020 14:00:44 GMT
-- request:
-    method: get
-    uri: http://127.0.0.1:9545/session/5aab8f72f8894b0a55bce6266b188a60/element/4bb18390-5911-4126-8182-7540c4f9ce72/text
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      Content-Type:
-      - application/json; charset=UTF-8
-      User-Agent:
-      - selenium/3.142.7 (ruby macosx)
-      Cache-Control:
-      - no-cache
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Length:
-      - '51'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: UTF-8
-      string: '{"value":"Caring Conversations COVID-19 Tip Sheet"}'
-    http_version: 
-  recorded_at: Wed, 05 Aug 2020 14:00:44 GMT
-- request:
-    method: get
-    uri: http://127.0.0.1:9545/session/5aab8f72f8894b0a55bce6266b188a60/element/ef2bfaa4-f0c5-4ea6-b797-aca3d31569e7/text
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      Content-Type:
-      - application/json; charset=UTF-8
-      User-Agent:
-      - selenium/3.142.7 (ruby macosx)
-      Cache-Control:
-      - no-cache
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Length:
-      - '12'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: UTF-8
-      string: '{"value":""}'
-    http_version: 
-  recorded_at: Wed, 05 Aug 2020 14:00:44 GMT
-- request:
-    method: get
-    uri: http://127.0.0.1:9545/session/5aab8f72f8894b0a55bce6266b188a60/element/71fbfcee-c428-435e-be13-5cd1d42c5c06/text
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      Content-Type:
-      - application/json; charset=UTF-8
-      User-Agent:
-      - selenium/3.142.7 (ruby macosx)
-      Cache-Control:
-      - no-cache
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Length:
-      - '12'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: UTF-8
-      string: '{"value":""}'
-    http_version: 
-  recorded_at: Wed, 05 Aug 2020 14:00:44 GMT
-- request:
-    method: get
-    uri: http://127.0.0.1:9545/session/5aab8f72f8894b0a55bce6266b188a60/element/1d82ad31-a4ad-4d2d-881c-aa78900c7e7e/text
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      Content-Type:
-      - application/json; charset=UTF-8
-      User-Agent:
-      - selenium/3.142.7 (ruby macosx)
-      Cache-Control:
-      - no-cache
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Length:
-      - '12'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: UTF-8
-      string: '{"value":""}'
-    http_version: 
-  recorded_at: Wed, 05 Aug 2020 14:00:44 GMT
-- request:
-    method: get
-    uri: http://127.0.0.1:9545/session/5aab8f72f8894b0a55bce6266b188a60/element/6ad94e0e-f66a-4a6d-af2b-9ee3c12d4c04/text
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      Content-Type:
-      - application/json; charset=UTF-8
-      User-Agent:
-      - selenium/3.142.7 (ruby macosx)
-      Cache-Control:
-      - no-cache
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Length:
-      - '31'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: UTF-8
-      string: '{"value":"Customize Resources"}'
-    http_version: 
-  recorded_at: Wed, 05 Aug 2020 14:00:44 GMT
-- request:
-    method: get
-    uri: http://127.0.0.1:9545/session/5aab8f72f8894b0a55bce6266b188a60/element/ef275da3-c460-4887-b919-2cdf06084a72/text
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      Content-Type:
-      - application/json; charset=UTF-8
-      User-Agent:
-      - selenium/3.142.7 (ruby macosx)
-      Cache-Control:
-      - no-cache
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Length:
-      - '28'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: UTF-8
-      string: '{"value":"Resource Liaison"}'
-    http_version: 
-  recorded_at: Wed, 05 Aug 2020 14:00:44 GMT
-- request:
-    method: get
-    uri: http://127.0.0.1:9545/session/5aab8f72f8894b0a55bce6266b188a60/element/eb23e5b4-e13d-4c44-aa10-ff1c9f6f23d6/text
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      Content-Type:
-      - application/json; charset=UTF-8
-      User-Agent:
-      - selenium/3.142.7 (ruby macosx)
-      Cache-Control:
-      - no-cache
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Length:
-      - '24'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: UTF-8
-      string: '{"value":"MyDirectives"}'
-    http_version: 
-  recorded_at: Wed, 05 Aug 2020 14:00:44 GMT
-- request:
-    method: get
-    uri: http://127.0.0.1:9545/session/5aab8f72f8894b0a55bce6266b188a60/element/9df93438-ab8e-41fe-949f-dd303a9c1c85/text
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      Content-Type:
-      - application/json; charset=UTF-8
-      User-Agent:
-      - selenium/3.142.7 (ruby macosx)
-      Cache-Control:
-      - no-cache
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Length:
-      - '12'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: UTF-8
-      string: '{"value":""}'
-    http_version: 
-  recorded_at: Wed, 05 Aug 2020 14:00:44 GMT
-- request:
-    method: delete
-    uri: http://127.0.0.1:9545/session/5aab8f72f8894b0a55bce6266b188a60/window
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      Content-Type:
-      - application/json; charset=UTF-8
-      User-Agent:
-      - selenium/3.142.7 (ruby macosx)
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Length:
-      - '12'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: UTF-8
-      string: '{"value":[]}'
-    http_version: 
-  recorded_at: Wed, 05 Aug 2020 14:00:44 GMT
-- request:
-    method: post
     uri: http://127.0.0.1:9549/session
     body:
       encoding: UTF-8
@@ -825,14 +31,14 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"84.0.4147.105","chrome":{"chromedriverVersion":"84.0.4147.30
-        (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310})","userDataDir":"/var/folders/rk/sgp65zqx56z_drt41n9r2gvh0000gn/T/.com.google.Chrome.nLGuRS"},"goog:chromeOptions":{"debuggerAddress":"localhost:62181"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac
+        (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310})","userDataDir":"/var/folders/rk/sgp65zqx56z_drt41n9r2gvh0000gn/T/.com.google.Chrome.neWUhJ"},"goog:chromeOptions":{"debuggerAddress":"localhost:64089"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac
         os x","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss
-        and notify","webauthn:virtualAuthenticators":true},"sessionId":"47ca4f96c89d9964d583a62a2664addb"}}'
+        and notify","webauthn:virtualAuthenticators":true},"sessionId":"226f56a4c3b67e3ef5972e5f17268928"}}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 14:03:28 GMT
+  recorded_at: Wed, 05 Aug 2020 16:52:50 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9549/session/47ca4f96c89d9964d583a62a2664addb/url
+    uri: http://127.0.0.1:9549/session/226f56a4c3b67e3ef5972e5f17268928/url
     body:
       encoding: UTF-8
       string: '{"url":"http://practicalbioethics.org/"}'
@@ -862,10 +68,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":null}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 14:03:33 GMT
+  recorded_at: Wed, 05 Aug 2020 16:52:59 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9549/session/47ca4f96c89d9964d583a62a2664addb/elements
+    uri: http://127.0.0.1:9549/session/226f56a4c3b67e3ef5972e5f17268928/elements
     body:
       encoding: UTF-8
       string: '{"using":"css selector","value":"h1"}'
@@ -893,45 +99,12 @@ http_interactions:
       - no-cache
     body:
       encoding: UTF-8
-      string: '{"value":[{"element-6066-11e4-a52e-4f735466cecf":"9a403b9b-e34c-44e8-9be5-f280eda7b07d"},{"element-6066-11e4-a52e-4f735466cecf":"4e0839c3-e7ff-40b0-b22c-e0737e889e1c"},{"element-6066-11e4-a52e-4f735466cecf":"59463fb0-9cc5-4876-9b07-3ee4241a858f"},{"element-6066-11e4-a52e-4f735466cecf":"84e6d150-3619-4d7e-8f0c-14bbf72875d8"},{"element-6066-11e4-a52e-4f735466cecf":"5e2e0722-9ec3-4cfb-95ce-31a5b92a0c9e"}]}'
+      string: '{"value":[{"element-6066-11e4-a52e-4f735466cecf":"e63a507b-a05e-42cf-b162-193f0950325f"},{"element-6066-11e4-a52e-4f735466cecf":"02d99f92-095c-4d65-96a6-4e5237a894d8"},{"element-6066-11e4-a52e-4f735466cecf":"75bcbe26-ff70-4720-8898-2eea0d00d35d"},{"element-6066-11e4-a52e-4f735466cecf":"57ccd79e-c3be-498e-a419-8a85685194db"},{"element-6066-11e4-a52e-4f735466cecf":"f740d091-3f3f-433b-a563-7fe03afdb3ba"}]}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 14:03:33 GMT
+  recorded_at: Wed, 05 Aug 2020 16:52:59 GMT
 - request:
     method: get
-    uri: http://127.0.0.1:9549/session/47ca4f96c89d9964d583a62a2664addb/element/9a403b9b-e34c-44e8-9be5-f280eda7b07d/text
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      Content-Type:
-      - application/json; charset=UTF-8
-      User-Agent:
-      - selenium/3.142.7 (ruby macosx)
-      Cache-Control:
-      - no-cache
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Length:
-      - '23'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: UTF-8
-      string: '{"value":"Sign Me Up!"}'
-    http_version: 
-  recorded_at: Wed, 05 Aug 2020 14:03:33 GMT
-- request:
-    method: get
-    uri: http://127.0.0.1:9549/session/47ca4f96c89d9964d583a62a2664addb/element/4e0839c3-e7ff-40b0-b22c-e0737e889e1c/text
+    uri: http://127.0.0.1:9549/session/226f56a4c3b67e3ef5972e5f17268928/element/e63a507b-a05e-42cf-b162-193f0950325f/text
     body:
       encoding: US-ASCII
       string: ''
@@ -961,10 +134,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":""}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 14:03:33 GMT
+  recorded_at: Wed, 05 Aug 2020 16:52:59 GMT
 - request:
     method: get
-    uri: http://127.0.0.1:9549/session/47ca4f96c89d9964d583a62a2664addb/element/59463fb0-9cc5-4876-9b07-3ee4241a858f/text
+    uri: http://127.0.0.1:9549/session/226f56a4c3b67e3ef5972e5f17268928/element/02d99f92-095c-4d65-96a6-4e5237a894d8/text
     body:
       encoding: US-ASCII
       string: ''
@@ -994,10 +167,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":""}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 14:03:33 GMT
+  recorded_at: Wed, 05 Aug 2020 16:52:59 GMT
 - request:
     method: get
-    uri: http://127.0.0.1:9549/session/47ca4f96c89d9964d583a62a2664addb/element/84e6d150-3619-4d7e-8f0c-14bbf72875d8/text
+    uri: http://127.0.0.1:9549/session/226f56a4c3b67e3ef5972e5f17268928/element/75bcbe26-ff70-4720-8898-2eea0d00d35d/text
     body:
       encoding: US-ASCII
       string: ''
@@ -1028,10 +201,10 @@ http_interactions:
       string: !binary |-
         eyJ2YWx1ZSI6IkNBUklORyBDT05WRVJTQVRJT05Twq4ifQ==
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 14:03:33 GMT
+  recorded_at: Wed, 05 Aug 2020 16:52:59 GMT
 - request:
     method: get
-    uri: http://127.0.0.1:9549/session/47ca4f96c89d9964d583a62a2664addb/element/5e2e0722-9ec3-4cfb-95ce-31a5b92a0c9e/text
+    uri: http://127.0.0.1:9549/session/226f56a4c3b67e3ef5972e5f17268928/element/57ccd79e-c3be-498e-a419-8a85685194db/text
     body:
       encoding: US-ASCII
       string: ''
@@ -1061,10 +234,43 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":"~ FOLLOW US ONLINE ~"}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 14:03:33 GMT
+  recorded_at: Wed, 05 Aug 2020 16:52:59 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9549/session/226f56a4c3b67e3ef5972e5f17268928/element/f740d091-3f3f-433b-a563-7fe03afdb3ba/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.142.7 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '23'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Sign Me Up!"}'
+    http_version: 
+  recorded_at: Wed, 05 Aug 2020 16:52:59 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9549/session/47ca4f96c89d9964d583a62a2664addb/elements
+    uri: http://127.0.0.1:9549/session/226f56a4c3b67e3ef5972e5f17268928/elements
     body:
       encoding: UTF-8
       string: '{"using":"css selector","value":"h2"}'
@@ -1094,10 +300,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":[]}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 14:03:33 GMT
+  recorded_at: Wed, 05 Aug 2020 16:52:59 GMT
 - request:
     method: post
-    uri: http://127.0.0.1:9549/session/47ca4f96c89d9964d583a62a2664addb/elements
+    uri: http://127.0.0.1:9549/session/226f56a4c3b67e3ef5972e5f17268928/elements
     body:
       encoding: UTF-8
       string: '{"using":"css selector","value":"h3"}'
@@ -1125,12 +331,12 @@ http_interactions:
       - no-cache
     body:
       encoding: UTF-8
-      string: '{"value":[{"element-6066-11e4-a52e-4f735466cecf":"14e6ef30-8484-4bd6-a75a-e699d6be7c41"},{"element-6066-11e4-a52e-4f735466cecf":"31f18f41-2a7d-467c-92ce-5996f1b5ec6b"},{"element-6066-11e4-a52e-4f735466cecf":"5fd473e8-4fc2-4cfe-a978-6459f13c4d43"},{"element-6066-11e4-a52e-4f735466cecf":"44a7a85a-22d4-4fb3-bd08-c3e2aba6c0a1"},{"element-6066-11e4-a52e-4f735466cecf":"73328aaa-94b8-4ca7-9a0b-478e331c79c7"},{"element-6066-11e4-a52e-4f735466cecf":"b8424c6b-f3f9-457f-99a5-592d28a17fdd"},{"element-6066-11e4-a52e-4f735466cecf":"9e932f0e-988d-4a6e-a914-2c70deda920f"},{"element-6066-11e4-a52e-4f735466cecf":"0ae8f30a-e546-4dbe-867b-9ef5ad49e8ab"},{"element-6066-11e4-a52e-4f735466cecf":"c5401f22-7eec-4f44-9688-e66f88dc27fd"},{"element-6066-11e4-a52e-4f735466cecf":"d08840d8-fa7d-4fac-9f48-1c9471430a83"},{"element-6066-11e4-a52e-4f735466cecf":"d5a43e5b-0f4d-4bf9-bfda-46c19ecc8476"},{"element-6066-11e4-a52e-4f735466cecf":"512a2efe-f34c-4cb6-9f62-893cd8e49b2b"},{"element-6066-11e4-a52e-4f735466cecf":"23568005-9ce7-4676-9c42-0926000f6c22"}]}'
+      string: '{"value":[{"element-6066-11e4-a52e-4f735466cecf":"22c20682-46fc-402c-9769-741db9998c21"},{"element-6066-11e4-a52e-4f735466cecf":"c4296d5d-93d3-40fc-8cc2-3e42aa720aca"},{"element-6066-11e4-a52e-4f735466cecf":"2e07378b-0825-41a1-9f96-bab03a1db9a9"},{"element-6066-11e4-a52e-4f735466cecf":"8a6f0d8d-1612-4da1-9ecd-e5be23466119"},{"element-6066-11e4-a52e-4f735466cecf":"32346eb4-b86b-4db0-bc25-9995d69b3bbc"},{"element-6066-11e4-a52e-4f735466cecf":"abe92162-9355-4f05-b822-98997ef37d01"},{"element-6066-11e4-a52e-4f735466cecf":"99e0c020-0dc4-4d3b-a34b-37daf9bbf3b9"},{"element-6066-11e4-a52e-4f735466cecf":"1fe439ac-e998-44f7-9aac-3cb24ae7a0f9"},{"element-6066-11e4-a52e-4f735466cecf":"49c53568-15d9-4560-8caa-3fbdeca63695"},{"element-6066-11e4-a52e-4f735466cecf":"f1344ae7-9b26-4b8f-b2fc-2a1bb16a053d"},{"element-6066-11e4-a52e-4f735466cecf":"fbbc1b6f-7063-4c77-87bf-662168fbf6c4"},{"element-6066-11e4-a52e-4f735466cecf":"539680ff-f0c8-465d-ace6-b63d0b830386"},{"element-6066-11e4-a52e-4f735466cecf":"c583c782-6071-4663-a40e-16ea989d880c"}]}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 14:03:33 GMT
+  recorded_at: Wed, 05 Aug 2020 16:52:59 GMT
 - request:
     method: get
-    uri: http://127.0.0.1:9549/session/47ca4f96c89d9964d583a62a2664addb/element/14e6ef30-8484-4bd6-a75a-e699d6be7c41/text
+    uri: http://127.0.0.1:9549/session/226f56a4c3b67e3ef5972e5f17268928/element/22c20682-46fc-402c-9769-741db9998c21/text
     body:
       encoding: US-ASCII
       string: ''
@@ -1160,10 +366,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":"Response to Pandemic"}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 14:03:33 GMT
+  recorded_at: Wed, 05 Aug 2020 16:52:59 GMT
 - request:
     method: get
-    uri: http://127.0.0.1:9549/session/47ca4f96c89d9964d583a62a2664addb/element/31f18f41-2a7d-467c-92ce-5996f1b5ec6b/text
+    uri: http://127.0.0.1:9549/session/226f56a4c3b67e3ef5972e5f17268928/element/c4296d5d-93d3-40fc-8cc2-3e42aa720aca/text
     body:
       encoding: US-ASCII
       string: ''
@@ -1193,10 +399,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":"Advance Care Planning and Shared Medical Decision Making"}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 14:03:33 GMT
+  recorded_at: Wed, 05 Aug 2020 16:52:59 GMT
 - request:
     method: get
-    uri: http://127.0.0.1:9549/session/47ca4f96c89d9964d583a62a2664addb/element/5fd473e8-4fc2-4cfe-a978-6459f13c4d43/text
+    uri: http://127.0.0.1:9549/session/226f56a4c3b67e3ef5972e5f17268928/element/2e07378b-0825-41a1-9f96-bab03a1db9a9/text
     body:
       encoding: US-ASCII
       string: ''
@@ -1226,10 +432,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":"Case Studies"}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 14:03:33 GMT
+  recorded_at: Wed, 05 Aug 2020 16:52:59 GMT
 - request:
     method: get
-    uri: http://127.0.0.1:9549/session/47ca4f96c89d9964d583a62a2664addb/element/44a7a85a-22d4-4fb3-bd08-c3e2aba6c0a1/text
+    uri: http://127.0.0.1:9549/session/226f56a4c3b67e3ef5972e5f17268928/element/8a6f0d8d-1612-4da1-9ecd-e5be23466119/text
     body:
       encoding: US-ASCII
       string: ''
@@ -1259,10 +465,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":"Clinical Ethics Services and Consortium"}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 14:03:33 GMT
+  recorded_at: Wed, 05 Aug 2020 16:52:59 GMT
 - request:
     method: get
-    uri: http://127.0.0.1:9549/session/47ca4f96c89d9964d583a62a2664addb/element/73328aaa-94b8-4ca7-9a0b-478e331c79c7/text
+    uri: http://127.0.0.1:9549/session/226f56a4c3b67e3ef5972e5f17268928/element/32346eb4-b86b-4db0-bc25-9995d69b3bbc/text
     body:
       encoding: US-ASCII
       string: ''
@@ -1292,10 +498,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":"Education Programs And Events"}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 14:03:33 GMT
+  recorded_at: Wed, 05 Aug 2020 16:52:59 GMT
 - request:
     method: get
-    uri: http://127.0.0.1:9549/session/47ca4f96c89d9964d583a62a2664addb/element/b8424c6b-f3f9-457f-99a5-592d28a17fdd/text
+    uri: http://127.0.0.1:9549/session/226f56a4c3b67e3ef5972e5f17268928/element/abe92162-9355-4f05-b822-98997ef37d01/text
     body:
       encoding: US-ASCII
       string: ''
@@ -1325,10 +531,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":"Caring Conversations COVID-19 Tip Sheet"}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 14:03:33 GMT
+  recorded_at: Wed, 05 Aug 2020 16:52:59 GMT
 - request:
     method: get
-    uri: http://127.0.0.1:9549/session/47ca4f96c89d9964d583a62a2664addb/element/9e932f0e-988d-4a6e-a914-2c70deda920f/text
+    uri: http://127.0.0.1:9549/session/226f56a4c3b67e3ef5972e5f17268928/element/99e0c020-0dc4-4d3b-a34b-37daf9bbf3b9/text
     body:
       encoding: US-ASCII
       string: ''
@@ -1358,10 +564,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":""}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 14:03:33 GMT
+  recorded_at: Wed, 05 Aug 2020 16:52:59 GMT
 - request:
     method: get
-    uri: http://127.0.0.1:9549/session/47ca4f96c89d9964d583a62a2664addb/element/0ae8f30a-e546-4dbe-867b-9ef5ad49e8ab/text
+    uri: http://127.0.0.1:9549/session/226f56a4c3b67e3ef5972e5f17268928/element/1fe439ac-e998-44f7-9aac-3cb24ae7a0f9/text
     body:
       encoding: US-ASCII
       string: ''
@@ -1391,10 +597,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":""}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 14:03:33 GMT
+  recorded_at: Wed, 05 Aug 2020 16:52:59 GMT
 - request:
     method: get
-    uri: http://127.0.0.1:9549/session/47ca4f96c89d9964d583a62a2664addb/element/c5401f22-7eec-4f44-9688-e66f88dc27fd/text
+    uri: http://127.0.0.1:9549/session/226f56a4c3b67e3ef5972e5f17268928/element/49c53568-15d9-4560-8caa-3fbdeca63695/text
     body:
       encoding: US-ASCII
       string: ''
@@ -1424,10 +630,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":""}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 14:03:33 GMT
+  recorded_at: Wed, 05 Aug 2020 16:52:59 GMT
 - request:
     method: get
-    uri: http://127.0.0.1:9549/session/47ca4f96c89d9964d583a62a2664addb/element/d08840d8-fa7d-4fac-9f48-1c9471430a83/text
+    uri: http://127.0.0.1:9549/session/226f56a4c3b67e3ef5972e5f17268928/element/f1344ae7-9b26-4b8f-b2fc-2a1bb16a053d/text
     body:
       encoding: US-ASCII
       string: ''
@@ -1457,10 +663,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":"Customize Resources"}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 14:03:33 GMT
+  recorded_at: Wed, 05 Aug 2020 16:52:59 GMT
 - request:
     method: get
-    uri: http://127.0.0.1:9549/session/47ca4f96c89d9964d583a62a2664addb/element/d5a43e5b-0f4d-4bf9-bfda-46c19ecc8476/text
+    uri: http://127.0.0.1:9549/session/226f56a4c3b67e3ef5972e5f17268928/element/fbbc1b6f-7063-4c77-87bf-662168fbf6c4/text
     body:
       encoding: US-ASCII
       string: ''
@@ -1490,10 +696,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":"Resource Liaison"}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 14:03:33 GMT
+  recorded_at: Wed, 05 Aug 2020 16:52:59 GMT
 - request:
     method: get
-    uri: http://127.0.0.1:9549/session/47ca4f96c89d9964d583a62a2664addb/element/512a2efe-f34c-4cb6-9f62-893cd8e49b2b/text
+    uri: http://127.0.0.1:9549/session/226f56a4c3b67e3ef5972e5f17268928/element/539680ff-f0c8-465d-ace6-b63d0b830386/text
     body:
       encoding: US-ASCII
       string: ''
@@ -1523,10 +729,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":"MyDirectives"}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 14:03:33 GMT
+  recorded_at: Wed, 05 Aug 2020 16:52:59 GMT
 - request:
     method: get
-    uri: http://127.0.0.1:9549/session/47ca4f96c89d9964d583a62a2664addb/element/23568005-9ce7-4676-9c42-0926000f6c22/text
+    uri: http://127.0.0.1:9549/session/226f56a4c3b67e3ef5972e5f17268928/element/c583c782-6071-4663-a40e-16ea989d880c/text
     body:
       encoding: US-ASCII
       string: ''
@@ -1556,10 +762,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":""}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 14:03:33 GMT
+  recorded_at: Wed, 05 Aug 2020 16:52:59 GMT
 - request:
     method: delete
-    uri: http://127.0.0.1:9549/session/47ca4f96c89d9964d583a62a2664addb/window
+    uri: http://127.0.0.1:9549/session/226f56a4c3b67e3ef5972e5f17268928/window
     body:
       encoding: US-ASCII
       string: ''
@@ -1587,5 +793,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":[]}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 14:03:34 GMT
+  recorded_at: Wed, 05 Aug 2020 16:52:59 GMT
 recorded_with: VCR 5.0.0

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: http://127.0.0.1:9550/session/963c9ed7162ae4c1c371a4973ae49527/elements
+    uri: http://127.0.0.1:9554/session/3e1ef8968ad464eb3c83b067c248d7ad/elements
     body:
       encoding: UTF-8
       string: '{"using":"css selector","value":"h1"}'
@@ -32,38 +32,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"value":[]}'
     http_version: 
-  recorded_at: Wed, 05 Aug 2020 14:01:04 GMT
-- request:
-    method: post
-    uri: http://127.0.0.1:9554/session/ac6d05a64bbf9452010cf1800f31c4c2/elements
-    body:
-      encoding: UTF-8
-      string: '{"using":"css selector","value":"h1"}'
-    headers:
-      Accept:
-      - application/json
-      Content-Type:
-      - application/json; charset=UTF-8
-      User-Agent:
-      - selenium/3.142.7 (ruby macosx)
-      Content-Length:
-      - '37'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Length:
-      - '12'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-    body:
-      encoding: UTF-8
-      string: '{"value":[]}'
-    http_version: 
-  recorded_at: Wed, 05 Aug 2020 14:03:43 GMT
+  recorded_at: Wed, 05 Aug 2020 16:53:16 GMT
 recorded_with: VCR 5.0.0
