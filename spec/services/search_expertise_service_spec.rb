@@ -36,6 +36,8 @@ RSpec.describe SearchExpertiseService, type: :service do
     it 'initializes with user, search, empty non_friends array, and fuzzy-string-match object' do
       expect(subject.user).to eq(user)
       expect(subject.search_text).to eq(search.search_text)
+      expect(subject.matches.empty?).to eq(true)
+      expect(subject.matcher.class).to eq(FuzzyStringMatch::JaroWinklerPure)
     end
 
     describe 'user relationships' do
@@ -44,6 +46,27 @@ RSpec.describe SearchExpertiseService, type: :service do
       it { expect(medical_expert_non_friend.friends.count).to eq(1) }
       it { expect(friend_of_user).to eq(User.second) }
       it { expect(friend_of_user.friends.include?(medical_expert_non_friend)).to eq(true) }
+    end
+  end
+
+  describe 'functionality' do
+    let(:medical_expertise_sample) { medical_expertise.sample }
+    let(:possible_matches) { subject.text_match_known_expertise }
+    let(:best_match) { possible_matches.last }
+
+    describe '#text_match_known_expertise' do
+      let(:search_text) { medical_expertise_sample }
+
+      it 'can return a list of possible matches, ranked by their fuzzy match constant' do
+        jarow_coeff = best_match[0]
+        user_id = best_match[1]
+        matched_expertise = best_match[2]
+        # matches will be sorted by jarow coeff., and index 1 = user_id; index2 = expertise match
+        # [[0.5, 1, 'string1'], [0.6, 1, 'string2'], [0.88, 2, 'string3'], [0.9, 3, 'string4']]
+        expect(matched_expertise).to eq(medical_expertise_sample)
+        expect(user_id).to eq(medical_expert_non_friend.id)
+        expect(jarow_coeff).to eq(1.0)
+      end
     end
   end
 end
