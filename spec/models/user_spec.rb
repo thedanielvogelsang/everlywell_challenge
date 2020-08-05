@@ -38,6 +38,26 @@ RSpec.describe User, type: :model do
     end
   end
 
+  describe 'expertise' do
+    before(:each) do
+      Expertise.destroy_all
+    end
+
+    let(:user) { User.create(name: Faker::Name.name, url: known_website_with_tags) }
+    let(:known_website_with_tags) { 'https://www.coloradosolidarity.com/' }
+
+    it 'finds and saves Expertise when passed to UserExpertiseService' do
+      VCR.use_cassette('user_creation/all_elements_cosolidarity', record: :new_episodes) do
+        expect(Expertise.count).to eq(0)
+        expect(user.expertise.count).to eq(0)
+        UserExpertiseService.new(user).call
+
+        expect(Expertise.count).to_not eq(0)
+        expect(user.expertise.count).to_not eq(0)
+      end
+    end
+  end
+
   describe 'friendships' do
     let(:friendship) { Friendship.create(user_id: user1.id, friend_id: user2.id) }
 

@@ -1,0 +1,135 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://127.0.0.1:9550/session/0a9e22b4bf5060f86539f41d46064238/elements
+    body:
+      encoding: UTF-8
+      string: '{"using":"css selector","value":"h3"}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.142.7 (ruby macosx)
+      Content-Length:
+      - '37'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '248'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":[{"element-6066-11e4-a52e-4f735466cecf":"f07f6f8d-513a-46db-8a78-28ad3e9dcd5a"},{"element-6066-11e4-a52e-4f735466cecf":"8eec3e69-17d0-426d-81a1-83808549d59a"},{"element-6066-11e4-a52e-4f735466cecf":"857c5003-797a-4501-a41b-d48563bc1f26"}]}'
+    http_version: 
+  recorded_at: Wed, 05 Aug 2020 12:59:34 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9550/session/0a9e22b4bf5060f86539f41d46064238/element/f07f6f8d-513a-46db-8a78-28ad3e9dcd5a/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.142.7 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '26'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Get Investment"}'
+    http_version: 
+  recorded_at: Wed, 05 Aug 2020 12:59:34 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9550/session/0a9e22b4bf5060f86539f41d46064238/element/8eec3e69-17d0-426d-81a1-83808549d59a/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.142.7 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '27'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Become a Member"}'
+    http_version: 
+  recorded_at: Wed, 05 Aug 2020 12:59:34 GMT
+- request:
+    method: get
+    uri: http://127.0.0.1:9550/session/0a9e22b4bf5060f86539f41d46064238/element/857c5003-797a-4501-a41b-d48563bc1f26/text
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.142.7 (ruby macosx)
+      Cache-Control:
+      - no-cache
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '32'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":"Start a Conversation"}'
+    http_version: 
+  recorded_at: Wed, 05 Aug 2020 12:59:34 GMT
+recorded_with: VCR 5.0.0

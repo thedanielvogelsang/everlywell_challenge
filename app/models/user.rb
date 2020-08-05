@@ -7,6 +7,7 @@ class User < ApplicationRecord
 
   has_many :friendships
   has_many :friends, through: :friendships
+  has_many :expertise, dependent: :destroy
 
   attr_reader :sanitized_url
 
