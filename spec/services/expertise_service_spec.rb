@@ -6,6 +6,10 @@ RSpec.describe ExpertiseService, type: :service do
     @driver = ExpertiseService.new(url: user.url, user: user)
   end
 
+
+  let(:user) { User.last }
+  let(:my_url) { 'http://coloradosolidarity.com' }
+
   describe '#initialize' do
     let(:headers) { %w(
       --no-sandbox
