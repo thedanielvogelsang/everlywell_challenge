@@ -1,0 +1,26 @@
+<h1>
+<%= @user.name %>
+</h1>
+</br>
+<h3> Website </h3>
+<h4> <%= @user.url %> </h4>
+<%= link_to @user.shortened_url,shortened_urls_show_path(shortened_url: @user.shortened_url) %>
+</br>
+<h3> Current Expertise </h3>
+<ul>
+  <% if @user.expertise.empty? %>
+    <h4> None Yet </h4>
+  <% else @user.expertise.each do |exp| %>
+      <li><%= exp.website_text.downcase.capitalize %></li>
+    <% end %>
+  <% end %>
+</ul>
+<h3> Current Friends </h3>
+<ul>
+  <% if @user.friends.empty? %>
+    <h4> None Yet </h4>
+  <% else @user.friends.each do |friend| %>
+      <li><%= link_to friend.name, user_path(friend) %></li>
+    <% end %>
+  <% end %>
+</ul>

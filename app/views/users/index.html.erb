@@ -1,0 +1,11 @@
+<h1>Users#index</h1>
+<table>
+<tr><td>Name</td><td>website</td><td>Number of friends</td></tr>
+<% @users.each do |user| %>
+  <tr>
+    <td><%= link_to user.name, user_path(user) %> </td>
+    <td><%= user.url %> </td>
+    <td><%= user.friends.count %> </td>
+  </tr>
+<% end %>
+</table>
