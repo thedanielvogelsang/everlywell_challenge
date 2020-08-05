@@ -8,11 +8,12 @@ class ExpertiseService
     --disable-dev-shm-usage
   )
 
-  attr_accessor :browser, :url, :user
+  attr_accessor :browser, :expertise, :url, :user
 
   def initialize(url:, user:)
     @url = url
     @user = user
+    @expertise = []
     begin
       options = Selenium::WebDriver::Chrome::Options.new(args: WEBDRIVER_HEADERS)
       @browser = Selenium::WebDriver.for :chrome, options: options

@@ -72,8 +72,8 @@ RSpec.describe ExpertiseService, type: :service do
       end
       it 'can return all together with single method' do
         VCR.use_cassette('expertise_service/all_elements_cosolidarity', record: :new_episodes) do
-          @driver.generate_expertise_from_titles
-          expect(@driver.expertise).to eq(h2_titles + h3_titles)
+          @driver.find_all_title_elements
+          expect(@driver.expertise).to match_array([h2_titles, h3_titles])
         end
       end
     end
