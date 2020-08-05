@@ -23,7 +23,12 @@ RSpec.describe SearchExpertiseService, type: :service do
   let(:subject) { SearchExpertiseService.new(user, search) }
   let(:search) { Search.create(search_text: search_text) }
 
-  let(:user) { User.first }
+  let!(:user) { User.first }
+  let!(:friend_of_user) { user.friends.first }
+  let!(:user_expertise) { user.expertise.pluck(:website_text) }
+  let!(:friend_expertise) { friend_of_user.expertise.pluck(:website_text) }
+  let!(:medical_expert_non_friend) { User.last }
+  let!(:medical_expertise) { medical_expert_non_friend.expertise.pluck(:website_text) }
 
   describe 'initialization' do
     let(:search_text) { 'whatever' }
@@ -31,6 +36,14 @@ RSpec.describe SearchExpertiseService, type: :service do
     it 'initializes with user, search, empty non_friends array, and fuzzy-string-match object' do
       expect(subject.user).to eq(user)
       expect(subject.search_text).to eq(search.search_text)
+    end
+
+    describe 'user relationships' do
+      it { expect(user.friends.count).to eq(1) }
+      it { expect(friend_of_user.friends.count).to eq(2) }
+      it { expect(medical_expert_non_friend.friends.count).to eq(1) }
+      it { expect(friend_of_user).to eq(User.second) }
+      it { expect(friend_of_user.friends.include?(medical_expert_non_friend)).to eq(true) }
     end
   end
 end
