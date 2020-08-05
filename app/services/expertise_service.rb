@@ -21,4 +21,8 @@ class ExpertiseService
       Rails.logger.info("Selenium Driver error: #{e}")
     end
   end
+
+  def close_connection
+    @browser.close
+  end
 end

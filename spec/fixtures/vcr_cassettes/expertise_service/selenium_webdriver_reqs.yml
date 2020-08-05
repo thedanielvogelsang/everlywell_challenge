@@ -1,0 +1,75 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://127.0.0.1:9542/session
+    body:
+      encoding: UTF-8
+      string: '{"desiredCapabilities":{"browserName":"chrome","version":"","platform":"ANY","javascriptEnabled":true,"cssSelectorsEnabled":true,"takesScreenshot":false,"nativeEvents":false,"rotatable":false,"goog:chromeOptions":{"args":["--no-sandbox","--headless","--ignore-certificate-errors","--disable-notifications","--window-size=1200,600","--disable-dev-shm-usage"]}},"capabilities":{"firstMatch":[{"browserName":"chrome","goog:chromeOptions":{"args":["--no-sandbox","--headless","--ignore-certificate-errors","--disable-notifications","--window-size=1200,600","--disable-dev-shm-usage"]}}]}}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.142.7 (ruby macosx)
+      Content-Length:
+      - '584'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '727'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"84.0.4147.105","chrome":{"chromedriverVersion":"84.0.4147.30
+        (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310})","userDataDir":"/var/folders/rk/sgp65zqx56z_drt41n9r2gvh0000gn/T/.com.google.Chrome.BgtUgA"},"goog:chromeOptions":{"debuggerAddress":"localhost:56018"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac
+        os x","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss
+        and notify","webauthn:virtualAuthenticators":true},"sessionId":"9c6c28d71fd04460132a34a02632d5dd"}}'
+    http_version: 
+  recorded_at: Wed, 05 Aug 2020 12:25:46 GMT
+- request:
+    method: post
+    uri: http://127.0.0.1:9543/session
+    body:
+      encoding: UTF-8
+      string: '{"desiredCapabilities":{"browserName":"chrome","version":"","platform":"ANY","javascriptEnabled":true,"cssSelectorsEnabled":true,"takesScreenshot":false,"nativeEvents":false,"rotatable":false,"goog:chromeOptions":{"args":["--no-sandbox","--headless","--ignore-certificate-errors","--disable-notifications","--window-size=1200,600","--disable-dev-shm-usage"]}},"capabilities":{"firstMatch":[{"browserName":"chrome","goog:chromeOptions":{"args":["--no-sandbox","--headless","--ignore-certificate-errors","--disable-notifications","--window-size=1200,600","--disable-dev-shm-usage"]}}]}}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json; charset=UTF-8
+      User-Agent:
+      - selenium/3.142.7 (ruby macosx)
+      Content-Length:
+      - '584'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '727'
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"84.0.4147.105","chrome":{"chromedriverVersion":"84.0.4147.30
+        (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310})","userDataDir":"/var/folders/rk/sgp65zqx56z_drt41n9r2gvh0000gn/T/.com.google.Chrome.rf6PRh"},"goog:chromeOptions":{"debuggerAddress":"localhost:56026"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac
+        os x","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss
+        and notify","webauthn:virtualAuthenticators":true},"sessionId":"10e2c716b91a51ad0db15ca958870390"}}'
+    http_version: 
+  recorded_at: Wed, 05 Aug 2020 12:25:47 GMT
+recorded_with: VCR 5.0.0

@@ -2,10 +2,17 @@ require 'rails_helper'
 
 RSpec.describe ExpertiseService, type: :service do
   before :each do
-    user = User.create(name: Faker::Name.name, url: 'http://coloradosolidarity.com')
-    @driver = ExpertiseService.new(url: user.url, user: user)
+    VCR.use_cassette('expertise_service/selenium_webdriver_reqs', :record => :new_episodes) do
+      user = User.create(name: Faker::Name.name, url: 'http://coloradosolidarity.com')
+      @driver = ExpertiseService.new(url: user.url, user: user)
+    end
   end
 
+  after :each do
+    VCR.use_cassette('expertise_service/close_selenium_webdriver', :record => :new_episodes) do
+      @driver.close_connection
+    end
+  end
 
   let(:user) { User.last }
   let(:my_url) { 'http://coloradosolidarity.com' }
