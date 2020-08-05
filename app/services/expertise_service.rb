@@ -22,7 +22,15 @@ class ExpertiseService
     end
   end
 
+  def browse_to_url
+    browser.navigate.to(url)
+  end
+
   def close_connection
     @browser.close
+  end
+
+  def current_url?
+    browser.current_url
   end
 end
