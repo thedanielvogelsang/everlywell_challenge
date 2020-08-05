@@ -18,6 +18,12 @@ RSpec.describe User, type: :model do
       expect(user.errors.empty?).to eq(true)
     end
 
+    it 'exposes sanitized_url upon creation' do
+      expect(user.sanitized_url).to eq(nil)
+      expect(user).to respond_to(:sanitized_url)
+      user.save
+      expect(user.sanitized_url).to be_truthy
+    end
 
     it 'generates a shortened url automatically for user' do
       expect(user.tiny_url.blank?).to eq(true)
