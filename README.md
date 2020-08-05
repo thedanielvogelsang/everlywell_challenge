@@ -62,11 +62,24 @@ Visit the app by going to 'http://localhost:3000/users'
 Using Postman, you may create users or searches, such as the following search creation:
 
 POST 'http://localhost:3000/api/v1/searches'
+
 body (JSON):
 ```
 {
 	"search": {
 		"search_text": "HELLO WORLD"
+	}
+}
+```
+
+POST 'http://localhost:3000/api/v1/users'
+
+body (JSON):
+```
+{
+	"user": {
+		"name": "James Dean",
+		"url": "www.example.com"
 	}
 }
 ```
