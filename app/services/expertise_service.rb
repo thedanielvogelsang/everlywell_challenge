@@ -34,6 +34,12 @@ class ExpertiseService
     browser.current_url
   end
 
+  def find_all_title_elements
+    find_h1_elements
+    find_h2_elements
+    find_h3_elements
+  end
+
   def find_h1_elements
     elems = browser.find_elements(:tag_name, 'h1')
     unless elems.empty?
