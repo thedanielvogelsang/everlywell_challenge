@@ -11,6 +11,10 @@ RSpec.describe User, type: :model do
   end
 
   describe 'creation' do
+    before(:each) do
+      TinyUrl.destroy_all
+    end
+
     let(:user) { User.new(name: Faker::Name.name, url: Faker::Internet.domain_name(subdomain: "example")) }
 
     it 'can create a user with name and url' do
