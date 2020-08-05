@@ -5,7 +5,7 @@ class SearchExpertiseService
   attr_reader :friend_ids, :matcher, :matched_term, :search_text, :user
   attr_accessor :matches, :new_friend
 
-  def initialize(user, search)
+  def initialize(user: , search: )
     @user = user
     @friend_ids = user.friends.pluck(:id)
     @search_text = search.search_text

@@ -20,7 +20,7 @@ RSpec.describe SearchExpertiseService, type: :service do
     User.second.add_friend(User.last)
   end
 
-  let(:subject) { SearchExpertiseService.new(user, search) }
+  let(:subject) { SearchExpertiseService.new(user: user, search: search) }
   let(:search) { Search.create(search_text: search_text) }
 
   let!(:user) { User.first }
