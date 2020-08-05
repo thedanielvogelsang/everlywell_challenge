@@ -43,4 +43,39 @@ RSpec.describe ExpertiseService, type: :service do
       end
     end
   end
+
+  describe 'website scraping' do
+    let(:h1_titles) { [] }
+    let(:h2_titles) do
+      ["An inclusive economy starts with us.", "Coops", "SoLIDARITY", "Economy", "The CSF", "Difference", "Join the CSF Community"]
+    end
+    let(:h3_titles) { ["Get Investment", "Become a Member", "Start a Conversation"] }
+
+    context 'scraping for' do
+      it 'h1 headers return predicted h1 elements' do
+        VCR.use_cassette('expertise_service/h1_elements_cosolidarity', record: :new_episodes) do
+          @driver.find_h1_elements
+          expect(@driver.expertise).to eq(h1_titles)
+        end
+      end
+      it 'h2 headers return predicted h2 elements' do
+        VCR.use_cassette('expertise_service/h2_elements_cosolidarity', record: :new_episodes) do
+          @driver.find_h2_elements
+          expect(@driver.expertise).to eq([h2_titles])
+        end
+      end
+      it 'h3 headers return predicted h3 elements' do
+        VCR.use_cassette('expertise_service/h3_elements_cosolidarity', record: :new_episodes) do
+          @driver.find_h3_elements
+          expect(@driver.expertise).to eq([h3_titles])
+        end
+      end
+      it 'can return all together with single method' do
+        VCR.use_cassette('expertise_service/all_elements_cosolidarity', record: :new_episodes) do
+          @driver.generate_expertise_from_titles
+          expect(@driver.expertise).to eq(h2_titles + h3_titles)
+        end
+      end
+    end
+  end
 end
