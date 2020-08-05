@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2020_08_05_114533) do
   enable_extension "plpgsql"
 
   create_table "tiny_urls", force: :cascade do |t|
-    t.string "original_url"
+    t.string "original_url", null: false
     t.string "shortened_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 2020_08_05_114533) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "name"
+    t.string "name", null: false
     t.string "url"
     t.string "tiny_url"
     t.datetime "created_at", precision: 6, null: false
