@@ -17,5 +17,14 @@ RSpec.describe User, type: :model do
       user.save
       expect(user.errors.empty?).to eq(true)
     end
+
+
+    it 'generates a shortened url automatically for user' do
+      expect(user.tiny_url.blank?).to eq(true)
+      expect(TinyUrl.count).to eq(0)
+      user.save
+      expect(user.tiny_url.blank?).to eq(false)
+      expect(TinyUrl.count).to eq(1)
+    end
   end
 end
