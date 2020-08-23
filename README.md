@@ -42,6 +42,8 @@ you may need to approve chromedriver if you see the following error:
 ..if so, navigate to path where Homebrew has installed the chromedriver cask (i.e. '/user/local/Caskroom/chromedriver')
 and try this command: `spctl --add --label 'Approved' chromedriver`
 
+or try this method: [other method](https://stackoverflow.com/questions/60362018/macos-catalinav-10-15-3-error-chromedriver-cannot-be-opened-because-the-de)
+
 other troubleshooting options: [here](https://stackoverflow.com/questions/60362018/macos-catalinav-10-15-3-error-chromedriver-cannot-be-opened-because-the-de)
 
 clone the repo
